@@ -1,5 +1,4 @@
 题目
-
 一，选择题
 (1) 设$f(x,y)=\operatorname{arcsin}\sqrt{x^2+y^4}$,则下列选项正确的是()
 A. $f_{x}^{\prime}( 0, 0) $ 存在，$f_{y}^{\prime}(0,0)$存在
@@ -1125,3 +1124,161 @@ $\text{同理，得}$​
 $A=\left.\frac{\partial^2z}{\partial x^2}\right|_{(-9,-3,-3)}=-\left.\frac16,B=\left.\frac{\partial^2z}{\partial x\partial y}\right|_{(-9,-3,-3)}=\left.\frac12,C=\frac{\partial^2z}{\partial y^2}\right|_{(-9,-3,-3)}=-\frac53,\right. $
 
 $\text{故}AC-B^2=\frac{1}{36}>0\text{,}A=-\frac{1}{6}<0,\text{所以}z(-9,-3)=-3\text{为极大值}.$
+
+(10) 证：
+
+$\text{由 }z=f(x)\ln(y),\text{得 }z_{x}^{\prime}=f^{\prime}(x)ln(y),z_{y}^{\prime}=f(x)\cdot\frac{f^{\prime}(y)}{f(y)}.$
+
+$\text{由已知,}f^{\prime}\left(0\right)=0,\text{故}$
+
+$z_x^{\prime}(0,0)=f^{\prime}(0)\ln f(0)=0,z_y^{\prime}(0,0)=f(0)\cdot\frac{f^{\prime}(0)}{f(0)}=0.$​
+
+$\text{又}$​
+
+$z_{xx}^{\prime\prime}\left(x,y\right)=f^{\prime\prime}(x)\ln f(y),$
+
+$z_{xy}^{\prime\prime}(x,y)=f^{\prime}(x)\frac{f^{\prime}(y)}{f(y)},$
+
+$z_{yy}^{\prime\prime}(x,y)=f(x)\frac{f^{\prime\prime}(y)f(y)-\bigl[f^\prime(y)\bigr]^2}{f^2(y)},$
+
+$\text{所以}\quad A=z_{xx}^{\prime\prime}\left(0,0\right)=f^{\prime\prime}(0)\ln f(0),B=z_{xy}^{\prime\prime}\left(0,0\right)=0,C=z_{yy}^{\prime\prime}\left(0,0\right)=f^{\prime\prime}(0),$
+
+$又f^{\prime\prime}(0)>0,f(0)>1,\text{故}$
+
+$AC-B^{2}=f^{\prime\prime}(0)\ln f(0)\cdot f^{\prime\prime}(0)-0^{2}=\left[f^{\prime\prime}(0)\right]^{2}\ln f(0)>0,$
+
+$A=f^{\prime\prime}(0)\ln f(0)>0,$
+
+$\text{所以}z=f(x)\mathrm{ln~}f(y)\text{ 在点(0,0)处取得极小值}.$
+
+(11) 解：
+
+$\text{依题意,}\frac{\partial z}{\partial x}=y-x^2,\frac{\partial z}{\partial y}=x-1,\text{故}$
+
+$z=\int\frac{\partial z}{\partial x}\mathrm{d}x=\int(y-x^{2})\mathrm{d}x+\varphi(y)=xy-\frac{1}{3}x^{3}+\varphi(y),$
+
+$\text{又}\frac{\partial z}{\partial y}=x+\varphi^{\prime}(y)=x-1,\text{得}\varphi^{\prime}(y)=-1,\text{积分得 }\varphi(y)=-y+C,\text{所以}$
+
+$z=xy-\frac{1}{3}x^{3}-y+C.$
+
+$\text{由 }f(1,1)=-\frac{1}{3},\text{得 }C=0,\text{于是}z=f(x,y)=xy-\frac{1}{3}x^3-y.$
+
+$\text{(I)在D内,由}$
+
+$\frac{\partial z}{\partial x}=y-x^2=0,\frac{\partial z}{\partial y}=x-1=0,$
+
+$\text{解得唯一驻点}(1,1).$
+
+$\text{(II)在}D\text{的边界上},y=0(0\leqslant x\leqslant7),f(x,0)=-\frac{1}{3}x^3,$
+
+$\text{显然在}\begin{bmatrix}0,7\end{bmatrix}\text{ 上最大值为 }0;x=0(0\leqslant y\leqslant7),f(0,y)=-y\text{,最大值为}0$
+
+$x+y=7,f(x,7-x)=-\frac{x^3}{3}-x^2+8x-7(0\leqslant x\leqslant7),$
+
+$\text{由}\frac{\mathrm{d}}{\mathrm{d}x}\Big[f(x,7-x)\big]=-x^2-2x+8=0,\text{得 }x=2,x=-4(\text{舍}).$
+
+$\text{比较大小：}$​
+
+$f(1,1)=-\frac{1}{3},f(0,0)=0,f(2,5)=\frac{7}{3},f(0,7)=-7,f(7,0)=-\frac{7^{3}}{3},$
+
+$\text{故 }f(x,y)\text{在}D\text{上的最大值为}f(2,5)=\frac73.$
+
+$\text{【注】此题已知全微分,求}f(x,y)\text{ 也可利用凑微分法}:$
+
+$dz=\left(y-x^{2}\right)dx+\left(x-1\right)dy=ydx+xdy-x^{2}dx-dy$
+
+$=\mathrm{d}(xy)-\mathrm{d}\Big(\frac{x^3}3\Big)-\mathrm{d}y=\mathrm{d}\Big(xy-\frac{x^3}3-y\Big),$
+
+$\text{故 }z=xy-\frac{x^{3}}{3}-y+C.$
+
+(12) 解：
+
+$\text{曲线 }x^2+xy+y^2=1\text{ 上任意一点}(x,y)\text{ 到坐标原点的距离为}d=f(x,y)=\sqrt{x^2+y^2}\text{，则原问题转化为求}$
+
+$f(x,y)=\sqrt{x^2+y^2}\text{ 在条件 }x^2+xy+y^2=1\text{ 下的最大值与最小值的问题。}$
+
+$\text{令 }L=x^2+y^2+\lambda(x^2+xy+y^2-1),\text{则}$
+
+$\begin{cases}L'_x=2x+(2x+y)\lambda=0(1),\\L'_y=2y+(x+2y)\lambda=0(2),\\L'_\lambda=x^2+xy+y^2-1=0(3).\end{cases}$
+
+$\text{由(1)}\times y-\text{(2)}\times x,\text{得}(y^2-x^2)\lambda=0,\text{解得 }\lambda=0\text{ 或 }x=\pm y.$
+
+$\text{若 }\lambda=0,\text{则由(2)式,得 }x=y=0\text{ 不满足(3)式,故 }\lambda=0\text{ 舍去}.$
+
+$\text{将}x = - y \text{代入(3)式,解得}$
+
+$\left.\left\{\begin{matrix}x=1,\\y=-1\end{matrix}\right.\right.$
+
+$\text{或}$
+
+$\left.\left\{\begin{matrix}x=-1,\\y=1.\end{matrix}\right.\right.$
+
+$将  x=y\text{ 代入(3) 式,解得}$
+
+$\begin{cases}x=\dfrac{1}{\sqrt{3}},\\y=\dfrac{1}{\sqrt{3}}\end{cases}\text{或}\begin{cases}x=-\dfrac{1}{\sqrt{3}},\\y=-\dfrac{1}{\sqrt{3}}.\end{cases}$
+
+$\text{比较大小:由于}f(1,-1)=\sqrt{2},f(-1,1)=\sqrt{2},$
+
+$f\Big(\frac{1}{\sqrt{3}},\frac{1}{\sqrt{3}}\Big)=\frac{\sqrt{6}}{3},f\Big(-\frac{1}{\sqrt{3}},-\frac{1}{\sqrt{3}}\Big)=\frac{\sqrt{6}}{3},$
+
+$\text{故最长距离为}\sqrt{2},\text{最短距离为}\frac{\sqrt{6}}{3}$
+
+(13) 解：
+
+$\text{依题意},\text{相当于求原点}(0,0)\text{ 到椭圆上的点的距离 }d\text{ 的最大值和最小值。}$
+
+$\text{设 }P(x,y)\text{ 为椭圆上任一点,则}$
+
+$d=\sqrt{x^2+y^2},d^2=x^2+y^2.$
+
+$\text{利用拉格朗日乘数法,令 }L=x^2+y^2+\lambda(x^2-4xy+5y^2-1),\text{则}$
+
+$\left.\left\{\begin{matrix}L'_x=2x+2\lambda x-4\lambda y=0(1),\\L'_y=2y-4\lambda x+10\lambda y=0(2),\\L'_\lambda=x^2-4xy+5y^2-1=0(3),\end{matrix}\right.\right.$
+
+$\text{(1)}\times\frac{x}{2}+\text{(2)}\times\frac{y}{2},\text{得 }x^2+y^2+\lambda(x^2-4xy+5y^2)=0,$
+
+$\text{又 }x^2-4xy+5y^2=1\text{,故 }x^2+y^2=-\lambda,\text{于是只需求 }\lambda,\text{可得}d=\sqrt{-\lambda}$
+
+$\text{(1)与(2)变形为}\left.\left\{\begin{matrix}(1+\lambda)x-2\lambda y=0,\\-2\lambda x+(1+5\lambda)y=0,\end{matrix}\right.\right.$​
+
+$\text{上式为关于}x,y\text{的二元一次齐次方程组，有非零解}x,y\text{的充要条件是}$
+
+$\left.\left|\begin{matrix}1+\lambda&-2\lambda\\-2\lambda&1+5\lambda\end{matrix}\right.\right|=\lambda^2+6\lambda+1=0$
+
+$\text{解得 }\lambda_1=-3+2\sqrt{2},$
+
+$\lambda_2=-3-2\sqrt2\text{,故}-\lambda=3\pm2\sqrt2=(\sqrt2\pm1)^2,\text{所以}d_1=\sqrt2+1\text{,}d_2=\sqrt2-1\text{ 分别为长半轴和短半轴。}$
+
+(14) 解：
+
+$\text{方程组等号两边同时对 }y\text{ 求导},\text{得}$
+
+$\begin{cases}F'_1\cdot\left(1-\frac{\mathrm{d}x}{\mathrm{d}y}\right)+F'_2\cdot\left(1-\frac{\mathrm{d}z}{\mathrm{d}y}\right)=0,\\G'_1\cdot\left(x+y\frac{\mathrm{d}x}{\mathrm{d}y}\right)+G'_2\cdot\left(-\frac{z}{y^2}+\frac{1}{y}\frac{\mathrm{d}z}{\mathrm{d}y}\right)=0,\end{cases}$
+
+$\text{整理得}$
+
+$\begin{cases}F'_1\dfrac{\mathrm{d}x}{\mathrm{d}y}+F'_2\dfrac{\mathrm{d}z}{\mathrm{d}y}=F'_1+F'_2,\\yG'_1\dfrac{\mathrm{d}x}{\mathrm{d}y}+\dfrac{1}{y}G'_2\dfrac{\mathrm{d}z}{\mathrm{d}y}=\dfrac{z}{y^2}G'_2-xG'_1,\end{cases}$
+
+$\text{解此方程组，得}$
+
+$\frac{\mathrm{d}x}{\mathrm{d}y}=\frac{\begin{vmatrix}F_1'+F_2'&F_2'\\\frac{z}{y^2}G_2'-xG_1'&\frac{1}{y}G_2'\end{vmatrix}}{\begin{vmatrix}F_1'&F_2'\\yG_1'&\frac{1}{y}G_2'\end{vmatrix}}=\frac{\frac{1}{y}F_1'G_2'+xF_2'G_1'+\left(\frac{1}{y}-\frac{z}{y^2}\right)F_2'G_2'}{\frac{1}{y}F_1'G_2'-yF_2'G_1'}$
+
+$\text{同理可得}$
+
+$\frac{\mathrm{d}z}{\mathrm{d}y}=-\frac{(x+y)F_1'G_1'+yF_2'G_1'-\frac{z}{y^2}F_1'G_2'}{\frac{1}{y}F_1'G_2'-yF_2'G_1'}$
+
+(15) 证：依题意，只要证明曲面上任一点的法向量都垂直于定向量. 
+
+$\text{令 }F(x,y,z)=\mathrm{e}^{2x-z}-f(\pi y-\sqrt{2}z),\text{则 }F_{x}^{\prime}=2\mathrm{e}^{2x-z},F_{y}^{\prime}=-\pi f^{\prime},F_{z}^{\prime}=-\mathrm{e}^{2x-z}+\sqrt{2}f^{\prime},$
+
+$\text{故曲面上任一点}(x,y,z)\text{ 处的法向量为 }n=(2\mathrm{e}^{2x-z},-\pi f^{\prime},-\mathrm{e}^{2x-z}+\sqrt{2}f^{\prime}).$
+
+$\text{设定向量为 }\mathbf{T}=\left(l,m,n\right),\text{要使 }\mathbf{T}\cdot\mathbf{n}=0,\text{即 }2l\mathrm{e}^{2x-z}-m\pi f^{\prime}-n\mathrm{e}^{2x-z}+\sqrt{2}nf^{\prime}=0,$
+
+$\text{只需使}2l=n,m\pi=\sqrt{2}n,$
+
+$\text{所以若取 }l=\pi,n=2\pi,m=2\sqrt{2},\text{则有 T}\cdot n=0,\text{故曲面上任一点的切平面都平行于以}$
+
+$(\pi,2\sqrt{2},2\pi)\text{ 为方向向量的定直线}.$
+
+$\text{【注】 此题说明 }\mathrm{e}^{2x-x}=f(\pi y-\sqrt{2}z)\text{ 表示一个柱面}.$
