@@ -366,15 +366,762 @@ $\frac{\mathrm{d}y}{\mathrm{d}x}=\frac{G_t^{\prime}f_x^{\prime}-G_x^{\prime}f_t^
 
 $\frac{\partial z}{\partial x}=-\frac y{x^2}f^{\prime}+\mathrm{e}^xg^{\prime},\frac{\partial^2z}{\partial x\partial y}=-\frac1{x^2}f^{\prime}-\frac y{x^3}f^{\prime\prime}+\mathrm{e}^xg^{\prime\prime}_{12}\cos y.$
 
+(10) $\begin{aligned}f_{11}^{\prime\prime}(1,1)+f_1^{\prime}(1,1)-f_2^{\prime}(1,1)\end{aligned}$
 
+解：
 
+$\frac{\mathrm{d}y}{\mathrm{d}x}=f_1^{\prime}\mathrm{e}^x-f_2^{\prime}sinx$
 
+$\frac{\operatorname{d}^2y}{\operatorname{d}x^2}=(f_{11}^{\prime\prime}\mathrm{e}^x-f_{12}^{\prime\prime}\sin x)\mathrm{e}^x+f_{1}^{\prime}\mathrm{e}^x-(f_{21}^{\prime\prime}\mathrm{e}^x-f_{22}^{\prime\prime}\sin x)\sin x-f_{2}^{\prime}\cos x$
 
+故，$\left.\frac{\operatorname{d}^2y}{\operatorname{d}x^2}\right|_{x=0}=f_{11}^{\prime\prime}(1,1)+f_{1}^{\prime}(1,1)-f_{2}^{\prime}(1,1)$
 
+(11) $-\frac12(\operatorname{d}x+\operatorname{d}y)$
 
+解：
 
+$\text{等式两边同时对 }x,y\text{ 求偏导,得}$
 
+$\begin{cases}\mathrm{e}^{2yx}\bullet2y\frac{\partial z}{\partial x}+1+\frac{\partial z}{\partial x}=0,\\\mathrm{e}^{2yz}\left(2z+2y\frac{\partial z}{\partial y}\right)+2y+\frac{\partial z}{\partial y}=0\end{cases}$
 
+$\text{当 }x=y=\frac{1}{2}\text{时},z=0,\text{代入方程组},\text{解得}$
 
+$\left.\frac{\partial z}{\partial x}\right|_{(\frac{1}{2},\frac{1}{2})}=-\left.\frac{1}{2},\left.\frac{\partial z}{\partial y}\right|_{(\frac{1}{2},\frac{1}{2})}=-\frac{1}{2}\right. $
 
+$\text{故 d}z\bigg|_{\left(\frac{1}{2},\frac{1}{2}\right)}=-\frac{1}{2}(\mathrm{d}x+\mathrm{d}y)$
 
+(12) 4
+
+解：
+
+$\frac{\partial f}{\partial x}=\frac{y\sin xy}{1+(xy)^2}$
+
+$\left.\frac{\partial^2f}{\partial x^2}\right|_{(0,2)}=\left.\left(\frac{2\sin2x}{1+4x^2}\right)'\right|_{x=0}=\left.\frac{4(1+4x^2)\cos2x-16x\sin2x}{\left(1+4x^2\right)^2}\right|_{x=0}=4$
+
+$【注】这里先将y=2\text{ 代入再对 }x\text{ 求导}$
+
+(13) $\frac13x^3+x^2y-xy^2-\frac13y^3+C(C\text{为任意常数})$
+
+解：
+
+$\text{由已知,}\frac{\partial z}{\partial x}=x^2+2xy-y^2,\frac{\partial z}{\partial y}=x^2-2xy-y^2,\text{故}$
+
+$z=\int(x^2+2xy-y^2)\mathrm{d}x+\varphi(y)=\frac{1}{3}x^3+x^2y-xy^2+\varphi(y)$
+
+$\text{又}\frac{\partial z}{\partial y}=x^2-2xy+\varphi^{\prime}(y)=x^2-2xy-y^2$
+
+$\text{得 }\varphi^{\prime}(y)=-y^2,\text{积分得 }\varphi(y)=-\frac13y^3+C,\text{其中 }C\text{ 为任意常数,故}$
+
+$z(x,y)=\frac{1}{3}x^3+x^2y-xy^2-\frac{1}{3}y^3+C.$
+
+(14) $\frac{-z\mathrm{e}^{-(x^{2}+y^{2})}}{(1+z)^{3}}$
+
+解：
+
+$\text{已知方程两边同时对 }x,y\text{ 求偏导},\text{得}$
+
+$\begin{aligned}\frac{\partial z}{\partial x}+\frac{1}{z}\frac{\partial z}{\partial x}-\mathrm{e}^{-x^2}=0,\frac{\partial z}{\partial y}+\frac{1}{z}\frac{\partial z}{\partial y}+\mathrm{e}^{-y^2}=0\end{aligned}$
+
+$\text{上两式解得}\frac{\partial z}{\partial x}=\frac{z\mathrm{e}^{-x^2}}{1+z},\frac{\partial z}{\partial y}=\frac{-z\mathrm{e}^{-y^2}}{1+z},\text{故}$
+
+$\begin{aligned}\frac{\partial^2z}{\partial x\partial y}&=\frac{\mathrm{e}^{-x^2}\cdot\frac{\partial z}{\partial y}\cdot(1+z)-z\mathrm{e}^{-x^2}\cdot\frac{\partial z}{\partial y}}{(1+z)^2}\end{aligned}$
+
+$=\frac{\mathrm{e}^{-x^2}}{\left(1+z\right)^2}\cdot\left(\frac{-z\mathrm{e}^{-y^2}}{1+z}\right)=\frac{-z\mathrm{e}^{-(x^2+y^2)}}{\left(1+z\right)^3}$
+
+(15) $f_{1}^{\prime}-\frac{1}{y^{2}}f_{2}^{\prime}+xyf_{11}^{\prime\prime}-\frac{x}{y^{3}}f_{22}^{\prime\prime}-\frac{1}{x^{2}}g^{\prime}-\frac{y}{x^{3}}g^{\prime\prime}$
+
+解：
+
+$\frac{\partial z}{\partial x}=yf'_1+\frac{1}{y}f'_2-\frac{y}{x^2}g'$
+
+$\begin{aligned}\frac{\partial^2z}{\partial x\partial y}&=f'_1+y\Big(xf'_{11}-\frac{x}{y^2}f''_{12}\Big)-\frac{1}{y^2}f'_2+\frac{1}{y}\Big(xf''_{21}-\frac{x}{y^2}f''_{22}\Big)-\frac{1}{x^2}g'-\frac{y}{x^3}g''\end{aligned}$
+
+$=f'_1-\frac{1}{y^2}f'_2+xyf''_{11}-\frac{x}{y^3}f''_{22}-\frac{1}{x^2}g'-\frac{y}{x^3}g''$
+
+$【注】 此题 g' 不能写成 g'_x$
+
+(16) $\begin{aligned}4x+2y-z-6=0,\frac{x-2}{4}=\frac{y-1}{2}=\frac{z-4}{-1}\end{aligned}$
+
+解：
+
+$\text{令 }F(x,y,z)=z-x^2-y^2+1,\text{则法向量为}$
+
+$\boldsymbol{n}=\left(F_{x}^{\prime}(P),F_{y}^{\prime}(P),F_{z}^{\prime}(P)\right)=(-4,-2,1)$
+
+$\text{故切平面方程为}4(x-2)+2(y-1)-(z-4)=0$
+
+$\text{即}4x+2y-z-6=0$
+
+$\text{法线方程为}\frac{x-2}4=\frac{y-1}2=\frac{z-4}{-1}$
+
+(17) $\frac{x-3}1=\frac{y-1}{-3}=\frac{z-1}{-3}\text{,}x-3y-3z+3=0$
+
+解：
+
+$\text{由}\left.\left\{\begin{matrix}x^2+y^2&=&10\\x^2+z^2&=&10\end{matrix}\right.\right.$​
+
+$\text{确定函数 }y=y(x),z=z(x),\text{视 }x\text{ 为参数,故曲线 L 的切线的方向向量为}$
+
+$\boldsymbol{T}=\left(1,y^{\prime}\left(x\right),z^{\prime}\left(x\right)\right)$
+
+$\text{已知方程组两边同时对 x 求导,得}$
+
+$\begin{cases}2x+2y\frac{\mathrm{d}y}{\mathrm{d}x}=0\\2x+2z\frac{\mathrm{d}z}{\mathrm{d}x}=0\end{cases}$
+
+$\text{将 }x=3,y=1,z=1\text{ 代人上方程组}$
+
+$\text{解得}\frac{\mathrm{d}y}{\mathrm{d}x}=-3,\frac{\mathrm{d}z}{\mathrm{d}x}=-3,\text{所以 }T=(1,-3,-3),\text{故切线方程为}\frac{x-3}1=\frac{y-1}{-3}=\frac{z-1}{-3}$
+
+$\text{法平面方程为(}x-3)-3(y-1)-3(z-1)=0$​
+
+$\text{即}x-3y-3z+3=0$
+
+$\text{【注】 求空间曲线的切线的方向向量时,视为参数方程处理}$
+
+(18) 2
+
+解：
+
+$\text{令}P=\frac{x+ky}{(x+y)^2},Q=\frac{y}{(x+y)^2},\text{依题意},\text{有}\frac{\partial Q}{\partial x}=\frac{\partial P}{\partial y},\text{则}$
+
+$\begin{aligned}\frac{0-y\cdot2(x+y)}{(x+y)^4}&=\frac{k(x+y)^2-(x+ky)\cdot2(x+y)}{(x+y)^4}\end{aligned}$
+
+$\text{比较两边分子,得}-2y=\left(k-2\right)x-ky,\text{解得 }k=2$
+
+(19) i - j
+
+解：
+
+$\text{函数 }f(x,y)\text{ 在 }P(1,-2)\text{ 处增加最快的方向是梯度方向},\text{由已知,}$
+
+$\textbf{grad }f(1,-2)=\left(f_x^{\prime}(1,-2),f_y^{\prime}(1,-2)\right)=(1,-1)$
+
+$\text{故所求方向为 }i-j$
+
+(20) $\frac29(1,2,-2)$
+
+解：
+
+$\textbf{grad}u=\dfrac{\partial u}{\partial x}\boldsymbol{i}+\dfrac{\partial u}{\partial y}\boldsymbol{j}+\dfrac{\partial u}{\partial z}\boldsymbol{k}=\dfrac{1}{x^2+y^2+z^2}(2x\boldsymbol{i}+2y\boldsymbol{j}+2z\boldsymbol{k})$
+
+$\text{故}\mathrm{grad~}u(1,2,-2)=\frac29(1,2,-2)$
+
+三、解答题
+
+(1) 解：
+
+$\frac{\mathrm{d}u}{\mathrm{d}x}=f_1^{\prime}+f_2^{\prime}\frac{\mathrm{d}y}{\mathrm{d}x}+f_3^{\prime}\frac{\mathrm{d}z}{\mathrm{d}x}\text{(1)}$ 
+
+$\text{方程 e}^{xy}-y=0\text{两边同时对}x\text{求导},\text{得 }\mathrm{e}^{xy}\left(y+x\frac{\mathrm{d}y}{\mathrm{d}x}\right)-\frac{\mathrm{d}y}{\mathrm{d}x}=0,\text{解得}$
+
+$\frac{\mathrm{d}y}{\mathrm{d}x}=\frac{y^2}{1-xy}\text{(2)}$
+
+$\text{方程 e}^z-xz=0\text{ 两边同时对 }x\text{ 求导},\text{得 e}^z\frac{\mathrm{d}z}{\mathrm{d}x}-z-x\frac{\mathrm{d}z}{\mathrm{d}x}=0,\text{解得}$
+
+$\frac{\mathrm{d}z}{\mathrm{d}x}=\frac z{xz-x}\text{(3)}$
+
+$\text{将(2), (3) 代入(1),得}\quad\frac{\mathrm{d}u}{\mathrm{d}x}=f_1^{\prime}+\frac{y^2}{1-xy}f_2^{\prime}+\frac z{xz-x}f_3^{\prime}$
+
+(2) 解：
+
+$\text{方程组两边同时对 x 求导,得}$
+
+$\begin{cases}2x+2y\frac{\mathrm{d}y}{\mathrm{d}x}+2z\frac{\mathrm{d}z}{\mathrm{d}x}=3,\\2-3\frac{\mathrm{d}y}{\mathrm{d}x}+5\frac{\mathrm{d}z}{\mathrm{d}x}=0,\end{cases}$
+
+$\text{解方程组,得}$
+
+$\frac{\mathrm{d}y}{\mathrm{d}x}=\frac{\begin{vmatrix}3-2x&2z\\-2&5\end{vmatrix}}{\begin{vmatrix}2y&2z\\-3&5\end{vmatrix}}=-\frac{10x-4z-15}{2(5y+3z)}$
+
+$\frac{\mathrm{d}z}{\mathrm{d}x}=\frac{\begin{vmatrix}2y&3-2x\\-3&-2\end{vmatrix}}{\begin{vmatrix}2y&2z\\-3&5\end{vmatrix}}=-\frac{6x+4y-9}{2(5y+3z)}$
+
+(3) 解：
+
+$\text{设 }S\text{ 上任一点为}(x,y,z),\text{则}(0,0,0)\text{ 到}(x,y,z)\text{ 的距离的平方为}$
+
+$d^2=x^2+y^2+z^2$
+
+$\text{令 }L=x^2+y^2+z^2+\lambda[(x-y)^2-z^2-1],\text{则}$
+
+$\left.\left\{\begin{matrix}L'_x=2x+2\lambda\left(x-y\right)=0\text{(1)},\\L'_y=2y-2\lambda\left(x-y\right)=0\text{(2)},\\L'_z=2z-2\lambda z=0\text{(3)},\\L'_\lambda=(x-y)^2-z^2-1=0\text{(4)}.\end{matrix}\right.\right.$
+
+$\text{由 }\text{(1)}\text{ 和 }\text{(2)},\text{得 }x=-y,\text{由 (3) 得 }z=0\text{ 或 }\lambda=1.$
+
+$\text{若 }\lambda=1,\text{由(1),(2),知 }x=y=0,\text{与(4)矛盾,舍去,故 }z=0.\text{由 @},\text{可得 }x^2=\frac14,\text{解得驻点}$
+
+$\left(\frac12,-\frac12,0\right),\left(-\frac12,\frac12,0\right),\text{故所求最短距离为}$
+
+$d=\sqrt{\left(\frac{1}{2}\right)^2+\left(-\frac{1}{2}\right)^2+0^2}=\frac{\sqrt{2}}{2}.$
+
+(4) 解：
+
+$\text{依题意,平面与柱面的交线在}xOy\text{ 面的上方,故归纳为求 }z=5\left(1-\frac x3-\frac y4\right)\text{在}$
+
+$\text{条件 }x^2+y^2=1\text{ 下的极值}.$
+
+$\text{利用拉格朗日乘数法,令 }L=5\left(1-\frac{x}{3}-\frac{y}{4}\right)+\lambda(x^2+y^2-1),\text{则}$
+
+$\begin{cases}L'_x=-\dfrac{5}{3}+2\lambda x=0,\\L'_y=-\dfrac{5}{4}+2\lambda y=0,\\L'_\lambda=x^2+y^2-1=0,\end{cases}$
+
+$\text{解方程组,得}\left(\frac45,\frac35\right),\left(-\frac45,-\frac35\right)$
+
+$\text{根据题设的实际意义 },\text{存在最小值},\text{比较 }z\left(\frac45,\frac35\right)=\frac{35}{12},z\left(-\frac45,-\frac35\right)=\frac{85}{12},$
+
+$\text{知距离最短的点为}\left(\frac45,\frac35,\frac{35}{12}\right).$
+
+(5) 解：
+
+$\text{在 }xy=4\text{ 上任取一点 }P(x,y),\text{则点 }P\text{ 到直线 }2x+y=1\text{ 的距离为}$​
+
+$d=\frac{\mid2x+y-1\mid}{\sqrt{5}}$
+
+$\text{只需求 }d^2=\frac{(2x+y-1)^2}5\text{的最小值}.$
+
+$\text{利用拉格朗日乘数法,令 }L=\frac15(2x+y-1)^2+\lambda(xy-4),\text{则}$
+
+$\begin{cases}L'_x=\dfrac{4}{5}(2x+y-1)+\lambda y=0,\\L'_y=\dfrac{2}{5}(2x+y-1)+\lambda x=0,\\L'_\lambda=xy-4=0,\end{cases}$
+
+$\text{解方程组},\text{得驻点}(\sqrt{2},2\sqrt{2}),(-\sqrt{2},-2\sqrt{2}).\text{ 比较}$
+
+$d(\sqrt{2},2\sqrt{2})=\frac{1}{\sqrt{5}}(4\sqrt{2}-1),d(-\sqrt{2},-2\sqrt{2})=\frac{1}{\sqrt{5}}(1+4\sqrt{2}),$
+
+$\text{得最短距离为}\frac1{\sqrt{5}}(4\sqrt{2}-1)$​
+
+(6) 解：
+
+$\text{(I)在}D{:}x^2+y^2<16\text{ 内}.\text{由}$
+
+$\left.\left\{\begin{matrix}z'_x=3x^2-6x=0,\\z'_y=-6y=0,\end{matrix}\right.\right.$
+
+$\text{得驻点(0,0),(2,0).}$
+
+$\text{(II)在}D_{:}x^2+y^2=16\text{ 上}.$
+
+$\text{利用拉格朗日乘数法,令 }L=x^3-3x^2-3y^2+\lambda(x^2+y^2-16),\text{则}$
+
+$\left.\left\{\begin{matrix}L'_x=3x^2-6x+2\lambda x=0,\\L'_y=-6y+2\lambda y=0,\\L'_\lambda=x^2+y^2-16=0,\end{matrix}\right.\right.$
+
+$\text{解得(0,}\pm4),(\pm4,0).$
+
+$\text{(III)比较大小}$
+
+$z(0,0)=0,z(2,0)=-4,z(0,4)=-48,$
+
+$z(0,-4)=-48,z(4,0)=16,z(-4,0)=-112,$
+
+$\text{得最大值为 }z(4,0)=16.$
+
+$\text{【注】}\text{(1)}\text{ 在 }D{:}x^2+y^2=16\text{ 上},\text{考虑到 }z=x^3-3x^2-3y^2\text{ 中含 }x^2+y^2,\text{可以化为一元函数极值问题。}$
+
+$将y^{2}=16-x^{2}\text{ 代入 }z=x^{3}-3x^{2}-3y^{2},\text{得 }z=x^{3}-48\left(-4\leqslant x\leqslant4\right).$
+
+$\text{又由}\frac{\mathrm{d}z}{\mathrm{d}x}=3x^2=0,\text{解得 }x=0,\text{则可得 }y=\pm4.\text{ 又因为 }x=\pm4\text{ 时 },y=0,\text{所以在 }D$
+
+$\text{边界上可能的最值点有}\left(0,4\right),\left(0,-4\right),\left(4,0\right),\left(-4,0\right).\text{比较大小}$
+
+$z\left(0,0\right)=0,z\left(2,0\right)=-4,z\left(0,4\right)=-48,$
+
+$z\left(0,-4\right)=-48,z\left(4,0\right)=16,z\left(-4,0\right)=-112,$
+
+$\text{得最大值为 }z(4,0)=16.$
+
+$\text{(2)求一元函数 }f(x)\text{ 在闭区间}\begin{bmatrix}a,b\end{bmatrix}\text{上的最值时},\text{若可导函数 }f(x)\text{ 在}(a,b)\text{ 内有唯一}$
+
+$\text{极值点}P,\text{则 }f(x)\text{在}[a,b]\text{上},\text{在点 }P\text{处取得最值},\text{但对二元函数 }f(x,y)\text{ 在有界闭区域 D上,此结论不一定成立。}$
+
+$$\text{此例},\text{在 }D\text{ 内有两个驻点}(0,0),(2,0),\text{则 }z_{xx}^{\prime\prime}=6x-6,z_{xy}^{\prime\prime}=0,z_{yy}^{\prime\prime}=-6.$$
+
+$\text{对点}(0,0),\text{有 }A=-6,B=0,C=-6,\text{则 }AC-B^2=36>0,A=-6<0,\text{故}(0,0)$
+
+$\text{是}z=f\left(x,y\right)\text{的极大值点};$
+
+$\text{对点}(2,0),\text{有 }A=12,B=0,C=-6,\text{则 }AC-B^2=12\times(-6)-0<0,\text{故}(2,0)\text{不是}f(x,y)\text{的极值点.}$
+
+$\text{综上可知,点}(0,0)\text{ 是 }z=x^3-3x^2-3y^2\text{ 在 }x^2+y^2<16\text{ 内的唯一极大值点,但不是}D:x^{2}+y^{2}\leqslant16\text{上的最大值点,最大值}z(4,0)=16\text{在边界}x^{2}+y^{2}=16\text{上取得。}$​(7) 解：
+
+$\text{依题意，知}\begin{aligned}d=\sqrt{x^2+y^2+z^2},d^2=x^2+y^2+z^2.\end{aligned}$​
+
+$\text{问题转化为求 }x^2+y^2+z^2\text{ 在条件 }z=x^2+y^2\text{ 和 }x+y+z=4\text{ 下的最值},\text{利用拉格朗日乘数法。令}L=x^{2}+y^{2}+z^{2}+\lambda_{1}\left(z-x^{2}-y^{2}\right)+\lambda_{2}\left(x+y+z-4\right),\text{则}$$\begin{gathered}
+\left.\left\{\begin{matrix}{L'_{x}=2x-2\lambda_{1}x+\lambda_{2}=0,(1)}\\{L'_{y}=2y-2\lambda_{1}y+\lambda_{2}=0,(2)}\\{L'_{z}=2z+\lambda_{1}+\lambda_{2}=0,(3)}\\L_{\lambda_1}^{\prime}=z-x^2-y^2=0,(4)\\L_{\lambda_2}^{\prime}=x+y+z-4=0.(5)\end{matrix}\right.\right. \\
+\end{gathered}$
+
+$\text{考虑到 }L\text{ 关于 }x\text{ 与 y 具有轮换性,方程组有 }x=y\text{解,将 }x=y\text{代入(4)与(5),解得}$
+
+$\left(-2,-2,8\right),\left(1,1,2\right),$
+
+$\text{故最大值为}\sqrt{(-2)^2+(-2)^2+8^2}=6\sqrt2,\text{最小值为}\sqrt{1^2+1^2+2^2}=\sqrt6.$
+
+$\text{【注】(1) 此题有两个约束条件}\left.\left\{\begin{matrix}z=x^2+y^2,\\x+y+z=4,\end{matrix}\right.\right.\text{可将}z\text{消去化为一个约束条件}$​
+
+$x+y+x^{2}+y^{2}=4,$
+
+$\text{问题转化为求 }x^2+y^2+(4-x-y)^2\text{ 在约束条件 }x+y+x^2+y^2=4\text{ 下的最值}.$
+
+$\text{(2)此题也可利用微分解决.}$​
+
+$\text{求}u=x^2+y^2+z^2\text{在}\left.\left\{\begin{matrix}z=x^{2}+y^{2},\\x+y+z=4\end{matrix}\right.\right.\text{下的条件极值.}$​
+
+$\text{可令全微分 }\mathrm{d}u=0,\text{并将约束条件两边微分整理得}$
+
+$\left.\left\{\begin{matrix}2x\mathrm{d}x+2y\mathrm{d}y+2z\mathrm{d}z=0,\\2x\mathrm{d}x+2y\mathrm{d}y-\mathrm{d}z=0,\\\mathrm{d}x+\mathrm{d}y+\mathrm{d}z=0.\end{matrix}\right.\right.$
+
+$\text{由于 }\mathrm{d}x,\mathrm{d}y,\mathrm{d}z\text{ 不全为零},\text{故上面方程组有非零解,于是}$
+
+$\begin{vmatrix}2x&2y&2z\\2x&2y&-1\\1&1&1\end{vmatrix}=0,$
+
+$\text{将行列式展开并化简},\text{有 }2\left(x-y\right)\left(2z+1\right)=0.$
+
+$\text{又由题意可知 }z\geqslant0,\text{故 }x=y,\text{将 }x=y\text{代入}z=x^2+y^2\text{ 和 }x+y+z=4,\text{解得两点分别为}(1,1,2)\text{和}(-2,-2,8).$$\text{比较大小,可知}\sqrt{1^2+1^2+2^2}=\sqrt{6},\sqrt{(-2)^2+(-2)^2+8^2}=6\sqrt{2}\text{ 分别为最小值和最大值。}$
+
+(8) 解：
+
+$\text{视}\xi,\eta\text{为中间变量 },x,y\text{为自变量。由已知，得}$
+
+$\begin{cases}\dfrac{\partial u}{\partial x}=\dfrac{\partial u}{\partial\xi}\cdot1+\dfrac{\partial u}{\partial\eta}\cdot1,\\\dfrac{\partial u}{\partial y}=\dfrac{\partial u}{\partial\xi}\cdot a+\dfrac{\partial u}{\partial\eta}\cdot b,\end{cases}$
+
+$\text{这里}\frac{\partial u}{\partial\xi},\frac{\partial u}{\partial\eta}\text{是以}\xi,\eta\text{为中间变量、}x,y\text{为自变量的二元函数,故}$
+
+$\frac{\partial^2u}{\partial x^2}=\frac{\partial^2u}{\partial\xi^2}+2\frac{\partial^2u}{\partial\xi\partial\eta}+\frac{\partial^2u}{\partial\eta^2},$
+
+$\frac{\partial^2u}{\partial y^2}=a^2\frac{\partial^2u}{\partial\xi^2}+2ab\frac{\partial^2u}{\partial\xi\partial\eta}+b^2\frac{\partial^2u}{\partial\eta^2},$
+
+$\frac{\partial^{2}u}{\partial x\partial y}=a\frac{\partial^{2}u}{\partial\xi^{2}}+(a+b)\frac{\partial^{2}u}{\partial\xi\partial\eta}+b\frac{\partial^{2}u}{\partial\eta^{2}},$
+
+$\text{带入已知方程，得}$
+
+$\frac{\partial^2u}{\partial x^2}+4\left.\frac{\partial^2u}{\partial x\partial y}+3\right.\frac{\partial^2u}{\partial y^2}$
+
+$=(1+4a+3a^2)\frac{\partial^2u}{\partial\xi^2}+\left[2+4(a+b)+6ab\right]\frac{\partial^2u}{\partial\xi\partial\eta}+(1+4b+3b^2)\frac{\partial^2u}{\partial\eta^2}.$
+
+$\text{又由已知，得}$
+
+$\left.\left\{\begin{matrix}1+4a+3a^2&=0(1),\\1+4b+3b^2&=0(2),\\2+4(a+b)+6ab&\neq0(3),\end{matrix}\right.\right.$
+
+$\text{联立(1)和(2)，解得}$
+
+$\left.\left\{\begin{matrix}a=-1,\\b=-\frac13\end{matrix}\right.\right.\text{或}\begin{cases}a=-\frac{1}{3},\\b=-1,\end{cases}\text{且都满足(3)式，故为所求。}$
+
+(9) 解：
+
+$\text{令}e^x\sin y=u,\text{则}$​​
+
+$\frac{\partial z}{\partial x}=f^{\prime}\left(u\right)\mathrm{e}^{x}\sin y$
+
+$\frac{\partial z}{\partial y}=f^{\prime}\left(u\right)\mathrm{e}^x\cos y$
+
+$\frac{\partial^2z}{\partial x^2}=f^{\prime}\left(u\right)\mathrm{e}^x\sin y+f^{\prime\prime}(u)\mathrm{e}^{2x}\sin^2y$
+
+$\frac{\partial^{2}z}{\partial y^{2}}=-f^{\prime}\left(u\right)\mathrm{e}^{x}\sin y+f^{\prime\prime}\left(u\right)\mathrm{e}^{2x}\cos^{2}y$
+
+$\text{代入原方程,得 }f^{\prime\prime}(u)-f(u)=0,\text{此为二阶齐次线性微分方程,解得}$
+
+$f(u)=C_1\mathrm{e}^u+C_2\mathrm{e}^{-u}(C_1,C_2\text{ 为任意常数}).$
+
+综合题
+
+一、选择题
+
+(1) B
+
+解：
+
+$\text{四个选项中},\text{只有 B是 }f(x,y)\text{ 在点}(x_0,y_0)\text{ 处可微的充分条件,故 B 一定不成立}.$
+
+(2) A
+
+解：
+
+$\text{利用保号性和极值的定义}.$
+
+$\text{由}\begin{aligned}\lim_{\substack{x\to0\\y\to0}}\frac{f(x,y)}{\mathrm{e}^{x^2+y^2}-1}&=1\end{aligned}\text{，知}\lim_{\substack{x\to0\\y\to0}}f(x,y)=0=f(0,0)$​
+
+$\text{又由保号性},\text{知在点}(0,0)\text{ 的去心邻域内有 }f(x,y)>0=f(0,0).\text{ 由极值的定义},\text{可知}$
+
+$f(x,y)\text{ 在点}(0,0)\text{ 处取得极小值,故 A 正确}.$
+
+(3) B
+
+解：
+
+$\text{在点}(0,0)\text{ 的去心邻域内有}\mid x\mid+y^4>0,\text{则由保号性},\text{可知 }f(x,y)-f(0,0)<0,$
+
+$\text{再由极值的定义},\text{可知 }f(x,y)\text{ 在点}(0,0)\text{ 处取得极大值,故 B 正确}.$
+
+(4) C
+
+解：
+
+$\text{由}\arctan\frac1{\sqrt{x^2+y^2}}\text{有界，知}\lim_{\substack{x\to0\\y\to0}}f(x,y)=\lim_{\substack{y\to0\\x\to0}}y\mathrm{arctan}\frac{1}{\sqrt{x^2+y^2}}=0=f(0,0)\text{，故}f(x,y)\text{在点}(0,0)\text{处连续。}$
+
+$f_x^{\prime}(0,0)=\lim_{x\to0}\frac{f(x,0)-f(0,0)}x=\lim_{x\to0}\frac0x=0,$
+
+$f_y^{\prime}(0,0)=\lim_{y\to0}\frac{f(0,y)-f(0,0)}y=\operatorname*{limarctan}_{y\to0}\frac1{\mid y\mid}=\frac\pi2,$
+
+$\frac{\Delta f-\mathrm{d}f}\rho=\frac{f(x,y)-f(0,0)-\bigl[f_{x}^{\prime}(0,0)x+f_{y}^{\prime}(0,0)y\bigr]}{\rho}$
+
+$=\frac{yarctan\frac{1}{\sqrt{x^2+y^2}}-\left[\begin{matrix}0\cdot x+\frac{\pi}{2}\cdot y\end{matrix}\right. ]}{\sqrt{x^2+y^2}}$
+
+$\text{由于}\left|\frac{y}{\sqrt{x^2+y^2}}\right|\leqslant1\text{，故}$
+
+$\lim\limits_{\begin{smallmatrix}x\to0\\y\to0\end{smallmatrix}}\frac{\Delta f-\mathrm{d}f}{\rho}=\lim\limits_{\begin{smallmatrix}x\to0\\y\to0\end{smallmatrix}}\frac{y}{\sqrt{x^2+y^2}}\biggl(\arctan\frac{1}{\sqrt{x^2+y^2}}-\frac{\pi}{2}\biggr)=0$
+
+$\text{所以 }f(x,y)\text{ 在点}(0,0\text{)处可微,故 C 正确}.$
+
+(5) B
+
+解：
+
+$\text{由已知条件及极限与无穷小的关系，有}$
+
+$\frac{f(x,y)-\sqrt{x^2+y^2}}{\sqrt{x^2+y^2}}=k+\alpha(\alpha\rightarrow0)$
+
+$\text{即}f(x,y)=(1+k)\sqrt{x^2+y^2}+o(\rho),\rho=\sqrt{x^2+y^2}$
+
+$\text{则在点}(0,0)\text{ 处},f(x,y)\text{ 沿任何方向 }l=\cos\alpha\boldsymbol{i}+\cos\beta\boldsymbol{j}\text{ 的方向导数都存在,且}$
+
+$\left.\frac{\partial f(x,y)}{\partial l}\right|_{(0,0)}=\lim_{t\to0^{+}}\frac{f(t\cos\alpha,t\sin\alpha)-f(0,0)}t$
+
+$=\lim_{t\to0^+}\frac{(1+k)t+o(t)}t=1+k$
+
+$\text{故当}\left.\frac{\partial f(x,y)}{\partial l}\right|_{(0,0)}=1+k>0\text{时，}f(x,y)\text{在点}(0,0)\text{处取得极小值，B正确。}$
+
+$\text{【注】(1)由}\lim_{\substack{x\to0\\y\to0}}\frac{f\left(x,y\right)-\sqrt{x^{2}+y^{2}}}{\sqrt{x^{2}+y^{2}}}=k\text{及}f(0,0)=0\text{得}\lim_{\substack{x\to0\\t\to0}}f(x,y)=f(0,0)=0$
+
+$\text{(2)}l=\cos\alpha i+\cos\beta j=\cos\alpha i+\sin\alpha j$​
+
+$\alpha+\beta=\frac{\pi}{2}$
+
+$l\text{所在直线方程的参数式为}\left.\left\{\begin{matrix}x=t\cos\alpha,\\y=t\sin\alpha.\end{matrix}\right.\right.$​
+
+$\text{(3)}\lim_{x\to0}\frac{f\left(x,0\right)-f\left(0,0\right)}{x}=\lim_{x\to0}\frac{\left(1+k\right)\sqrt{x^{2}}+o\left(x\right)}{x}$
+
+$=\lim_{x\to0}\left[\left(1+k\right)\frac{\left|x\right|}{x}+\frac{o\left(x\right)}{x}\right]$
+
+$\text{当}k>-1\text{时,上述极限不存在},\text{故}f_x^{\prime}(0,0)\text{不存在},\text{同样}f_y^{\prime}(0,0)\text{不存在},\text{所以}f(x,y)\text{在点}(0,0)\text{处不可微，可排除A，D。}$
+
+$\text{(4)}f(x,y)\text{ 在点}(0,0)\text{ 处沿任何方向的方向导数都大于零}(\text{小于零}),\text{则 }f(x,y)\text{ 在点}(0,0)\text{处取得极小（大）值。}$
+
+(6) A
+
+解：
+
+$\text{由}\frac{\partial f(x,y)}{\partial x}>0,\text{知}f(x,y)\text{ 关于 }x\text{ 单调增加};\text{由}\frac{\partial f(x,y)}{\partial y}<0,\text{知 }f(x,y)\text{ 关于 }y\text{单调减少，故当}x1<x2\text{,}y1>y2\text{时,有}$
+
+$f(x_1,y_1)<f(x_2,y_1),f(x_2,y_1)<f(x_2,y_2)$
+
+$\text{即 }f(x_1,y_1)<f(x_2,y_1)<f(x_2,y_2),\text{故 A 正确}.$
+
+(7) A
+
+解：
+
+$\text{由}F_x^{\prime}(x_0,y_0)=0,\text{得}\frac{\mathrm{d}y}{\mathrm{d}x}\bigg|_{x=x_0}=-\frac{F_x^{\prime}(x_0,y_0)}{F_y^{\prime}(x_0,y_0)}=0,\text{故}x=x_0\text{ 是}y=y(x)\text{的驻点}.$
+
+$F(x,y)=0\text{两边对}x\text{求导},\text{得}F_x^{'}(x,y)+F_y^{'}(x,y)\cdot\frac{\mathrm{d}y}{\mathrm{d}x}=0.\text{再对}x\text{求导},\text{得}$
+
+$F_{xx}^{\prime\prime}(x,y)+F_{xy}^{\prime\prime}(x,y)\cdot\frac{\mathrm{d}y}{\mathrm{d}x}+\left[F_{yx}^{\prime\prime}(x,y)+F_{yy}^{\prime\prime}(x,y)\frac{\mathrm{d}y}{\mathrm{d}x}\right]\frac{\mathrm{d}y}{\mathrm{d}x}+F_{y}^{\prime}(x,y)\frac{\mathrm{d}^{2}y}{\mathrm{d}x^{2}}=0.$
+
+$\text{将}(x_0,y_0)\text{ 代人上式},\text{解得}\frac{\mathrm{d}^2y}{\mathrm{d}x^2}\bigg|_{x=x_0}=-\frac{F_{xx}^{\prime\prime}(x_0,y_0)}{F_{y}^{\prime}(x_0,y_0)}>0,\text{故 }y=y(x)\text{ 在 }x=x_0\text{ 处取得极小值，A正确。}$
+
+二、填空题
+
+(1) $y^2+xy+1$
+
+解：
+
+$\frac{\partial^2z}{\partial y^2}=2,\text{两边同时对 }y\text{ 积分,得}$
+
+$\frac{\partial z}{\partial y}=\int2\mathrm{d}y+\varphi(x)=2y+\varphi(x)$
+
+$\text{由 }z_y^{\prime}(x,0)=x,\text{得 }\varphi(x)=x,\text{故}\frac{\partial z}{\partial y}=2y+x,\text{两边再同时对 }y\text{积分},\text{得}$
+
+$z=\int(2y+x)\mathrm{d}y+\varphi_1(x)=y^2+xy+\varphi_1(x)$
+
+$\text{又由 }z(x,0)=1,\text{得 }\varphi_1(x)=1,\text{于是 }z(x,y)=y^2+xy+1$
+
+(2) $\frac12x^2y+\frac12xy^2+x+y^2$
+
+解：
+
+$\frac{\partial^2z}{\partial y\partial x}=x+y,\text{两边同时对 }x\text{ 积分,得}$
+
+$\frac{\partial z}{\partial y}=\int(x+y)\mathrm{d}x+\varphi(y)=\frac{1}{2}x^2+xy+\varphi(y)$
+
+$\text{由 }z(0,y)=y^2,\text{有}\frac{\mathrm{d}(y^2)}{\mathrm{d}y}=\varphi(y),\text{故 }\varphi(y)=2y$
+
+$\text{又由}\frac{\partial z}{\partial y}=\frac{1}{2}x^{2}+xy+2y,\text{两端同时对 }y\text{积分},\text{得 }z=\frac{1}{2}x^{2}y+\frac{1}{2}xy^{2}+y^{2}+\varphi_{1}\left(x\right),$
+
+$\text{由于}z(x,0)=x,\text{故}\varphi_1(x)=x,\text{所以}z(x,y)=\frac{1}{2}x^2y+\frac{1}{2}xy^2+x+y^2$
+
+(3) $n!\left[1+\frac{(-1)^n}{3^{n+1}}\right]$
+
+解：
+
+$z=\frac{2x}{x^2-y^2}=\frac{1}{x+y}-\frac{1}{y-x},\text{利用}\left(\frac{1}{x}\right)^{(n)}=(-1)^n\frac{n!}{x^{n+1}},\text{有}$
+
+$\frac{\partial^nz}{\partial y^n}=(-1)^n\frac{n!}{(x+y)^{n+1}}-(-1)^n\frac{n!}{(y-x)^{n+1}}$
+
+$\text{故}\frac{\partial^nz}{\partial y^n}\Bigg|_{(2,1)}=(-1)^n\frac{n!}{3^{n+1}}-(-1)^n\frac{n!}{(-1)^{n+1}}=n!\Bigg[1+\frac{(-1)^n}{3^{n+1}}\Bigg]$
+
+(4) $x+4y+6z=21\text{ 或 }x+4y+6z=-21$
+
+解：
+
+$\text{令 F}(x,y,z)=x^2+2y^2+3z^2-21,\text{则 }F_x^{\prime}=2x,F_y^{\prime}=4y,F_z^{\prime}=6z,\text{法向量为}$
+
+$\boldsymbol{n}=(F_{x}^{\prime},F_{y}^{\prime},F_{z}^{\prime})=(2x,4y,6z)$
+
+$\text{设切点为}(x_0,y_0,z_0),\text{于是曲面 }F(x,y,z)=0\text{ 在该点处的切平面方程为}$
+
+$x_0(x-x_0)+2y_0(y-y_0)+3z_0(z-z_0)=0$
+
+$\text{由已知,该切平面与 }x+4y+6z=0\text{ 平行,故有}\frac{x_0}{1}=\frac{2y_0}4=\frac{3z_0}6=\lambda$
+
+$\text{解得 }x_0=\lambda,y_0=2\lambda,z_0=2\lambda.$
+
+$\text{又切点在曲面上,故 }\lambda^2+2(2\lambda)^2+3(2\lambda)^2=21,\text{解得 }\lambda=\pm1.\text{ 对应于 }\lambda=1,\text{切点为}$
+
+$(1,2,2);\text{ 对应于 }\lambda=-1,\text{切点为}(-1,-2,-2)$
+
+$\text{所求切平面方程为}$
+
+$(x-1)+4(y-2)+6(z-2)=0,(x+1)+4(y+2)+6(z+2)=0$
+
+$\text{即 }x+4y+6z=21\text{ 或 }x+4y+6z=-21$
+
+(5) $4x-z-2=0$
+
+解：
+
+$\text{依题设,只需求法向量 }n=(f_x^{\prime},f_y^{\prime},-1)$
+
+$f(tx,ty)=t^2f(x,y)\text{ 两边同时对 }t\text{ 求导},\text{得 }xf_1^{\prime}(tx,ty)+yf_2^{\prime}(tx,ty)=2tf(x,y),$
+
+$\text{令 }t=1,\text{则上式为}xf_{1}^{\prime}(x,y)+yf_{2}^{\prime}(x,y)=2f(x,y).$
+
+$\text{将 }x=1,y=-2,z=f(1,-2)=2,f_1^{\prime}(1,-2)=4\text{ 代人上式,得 }f_2^{\prime}(1,-2)=0,\text{即}$
+
+$f_y^{\prime}(1,-2)=0,\text{故法向量为 }n=(4,0,-1),\text{所求切平面方程为}$
+
+$4\left(x-1\right)+0\cdot\left(y+2\right)+\left(-1\right)\left(z-2\right)=0$
+
+$\text{即 }4x-z-2=0$
+
+(6) $\frac{\sqrt{3}}{3}$
+
+解：
+
+$\frac{\partial u}{\partial x}=\frac x3,\frac{\partial u}{\partial y}=\frac y6,\frac{\partial u}{\partial z}=\frac z9,n\text{ 为单位向量,故}$
+
+$\left.\frac{\partial u}{\partial n}\right|_{(1,2,3)}=\frac13\times\frac1{\sqrt3}+\frac13\times\frac1{\sqrt3}+\frac13\times\frac1{\sqrt3}=\frac{\sqrt3}3$
+
+(7) $-\frac{12}5\sqrt{5}.$
+
+解：
+
+$\text{令 }F=x^2+y^2-5,\text{外法线方向 }n=(2x,2y,0),\text{则曲面在点}P(1,2,-1)\text{处}n\text{的方向余弦为}$​
+
+$\cos\alpha=\frac{1}{\sqrt{5}},\cos\beta=\frac{2}{\sqrt{5}},\cos\gamma=0$
+
+$\left.\text{又}\frac{\partial u}{\partial x}\right|_{P}=-4,\left.\frac{\partial u}{\partial y}\right|_{P}=-4,\left.\frac{\partial u}{\partial z}\right|_{P}=12,\text{故}$
+
+$\left.\frac{\partial u}{\partial n}\right|_P=(-4)\times\frac{1}{\sqrt{5}}+(-4)\times\frac{2}{\sqrt{5}}+12\times0=-\frac{12}{5}\sqrt{5}.$
+
+三、解答题
+
+(1) 解：
+
+$\text{此题是隐函数与复合函数求导的综合题}.$
+
+$\text{由 }x\text{e}^x=\tan t,\text{可知 }x\text{ 是}t\text{ 的函数,同理 }y=\cos t,y\text{ 也是}t\text{ 的函数,再由 }x+y-z=\mathrm{e}^z,$
+
+$\text{可知 }z\text{ 是 }t\text{ 的一元函数}.$
+
+$\text{方程 }x+y-z=\mathrm{e}^z\text{ 两边同时对 }t\text{ 求导},\text{得}\frac{\mathrm{d}x}{\mathrm{d}t}+\frac{\mathrm{d}y}{\mathrm{d}t}-\frac{\mathrm{d}z}{\mathrm{d}t}=\mathrm{e}^z\cdot\frac{\mathrm{d}z}{\mathrm{d}t},\text{故}$
+
+$\dfrac{\mathrm{d}z}{\mathrm{d}t}=\dfrac{1}{1+\mathrm{e}^z}\Big(\dfrac{\mathrm{d}x}{\mathrm{d}t}+\dfrac{\mathrm{d}y}{\mathrm{d}t}\Big)$
+
+$\text{再求导},\text{得}\frac{\mathrm{d}^2x}{\mathrm{d}t^2}+\frac{\mathrm{d}^2y}{\mathrm{d}t^2}-\frac{\mathrm{d}^2z}{\mathrm{d}t^2}=\mathrm{e}^z\left(\frac{\mathrm{d}z}{\mathrm{d}t}\right)^2+\mathrm{e}^z\frac{\mathrm{d}^2z}{\mathrm{d}t^2},\text{故}$
+
+$\dfrac{\mathrm{d}^2z}{\mathrm{d}t^2}=\dfrac{1}{1+\mathrm{e}^z}\bigg[\dfrac{\mathrm{d}^2x}{\mathrm{d}t^2}+\dfrac{\mathrm{d}^2y}{\mathrm{d}t^2}-\mathrm{e}^z\bigg(\dfrac{\mathrm{d}z}{\mathrm{d}t}\bigg)^2\bigg]$
+
+$=\dfrac{1}{1+\mathrm{e}^z}\bigg[\dfrac{\mathrm{d}^2x}{\mathrm{d}t^2}+\dfrac{\mathrm{d}^2y}{\mathrm{d}t^2}-\mathrm{e}^z\cdot\dfrac{1}{\left(1+\mathrm{e}^z\right)^2}\bigg(\dfrac{\mathrm{d}x}{\mathrm{d}t}+\dfrac{\mathrm{d}y}{\mathrm{d}t}\bigg)^2\bigg](1)$​
+
+$\text{而}\frac{\mathrm{d}y}{\mathrm{d}t}=-\sin t\text{,}\frac{\mathrm{d}^{2}y}{\mathrm{d}t^{2}}=-\cos t$
+
+$\text{又由 }x\mathrm{e}^x=\tan t,\text{得 }\mathrm{e}^x\frac{\mathrm{d}x}{\mathrm{d}t}+x\mathrm{e}^x\frac{\mathrm{d}x}{\mathrm{d}t}=\sec^2t,\text{再对 }t\text{ 求导},\text{得}$
+
+$\mathrm{e}^x\left(\frac{\mathrm{d}x}{\mathrm{d}t}\right)^2+\mathrm{e}^x\frac{\mathrm{d}^2x}{\mathrm{d}t^2}+\mathrm{e}^x\left(\frac{\mathrm{d}x}{\mathrm{d}t}\right)^2+x\mathrm{e}^x\left(\frac{\mathrm{d}x}{\mathrm{d}t}\right)^2+x\mathrm{e}^x\frac{\mathrm{d}^2x}{\mathrm{d}t^2}=2\sec^2t\cdot\tan t,$
+
+$\text{故}\frac{\mathrm{d}x}{\mathrm{d}t}=\frac{\sec^2t}{\left(1+x\right)\mathrm{e}^{x}},\frac{\mathrm{d}^2x}{\mathrm{d}t^{2}}=\frac{\sec^2t\Bigl[2\mathrm{e}^{x}(1+x)^2\tan t-(2+x)\sec^2t\Bigr]}{\left(1+x\right)^{3}\mathrm{e}^{2x}}$
+
+$\text{当 }t=0\text{ 时,由 }x\mathrm{e}^x=0,\text{得 }x=0,\text{而 }y=\cos0=1.\text{ 将 }x=0,y=1\text{ 代人 }x+y-z=e^z.\text{得}z=0\text{，故}$
+
+$\left.\frac{\mathrm{d}x}{\mathrm{d}t}\right|_{t=0}=\left.1,\left.\frac{\mathrm{d}y}{\mathrm{d}t}\right|_{t=0}=\left.0,\left.\frac{\mathrm{d}^2x}{\mathrm{d}t^2}\right|_{t=0}=-\left.2\text{,}\frac{\mathrm{d}^2y}{\mathrm{d}t^2}\right|_{t=0}=-\left.1\right.\right.\right. $
+
+$\left.\text{代人(1)式},\text{可知}\frac{\mathrm{d}^2z}{\mathrm{d}t^2}\right|_{t=0}=-\frac{13}8$
+
+(2) 证：
+
+$(\text{必要性)设 }z=f\biggl(\frac{x}{y}\biggr).\text{令}\frac{x}{y}=u,\text{则}$
+
+$\left.\left\{\begin{aligned}&\frac{\partial z}{\partial x}=f'(u)\cdot\frac{1}{y},(1)\\&\frac{\partial z}{\partial y}=f'(u)\cdot\left(-\frac{x}{y^2}\right),(2)\end{aligned}\right.\right.$
+
+$\text{(1)}\times x+\text{(2)}\times y,\text{得 }x\frac{\partial z}{\partial x}+y\frac{\partial z}{\partial y}=0.$
+
+$\text{(充分性)设}x\frac{\partial z}{\partial x}+y\frac{\partial z}{\partial y}=0.\text{令}u=\frac{x}{y},v=y,\text{则}z=z(x,y)\text{为}$
+
+$z=z(yu,v)=f(u,v)$
+
+$\text{根据复合函数微分法，有}$​
+
+$\begin{cases}\dfrac{\partial z}{\partial x}=f'_u\cdot\dfrac{1}{y}+f'_v\cdot0,\\\dfrac{\partial z}{\partial y}=f'_u\cdot\left(-\dfrac{x}{y^2}\right)+f'_v\cdot1.\end{cases}$
+
+$\text{由条件}x\frac{\partial z}{\partial x}+y\frac{\partial z}{\partial y}=\frac{x}{y}f'_{u}-\frac{x}{y}f'_{u}+yf'_{v}=0$
+
+$\text{知}f^{\prime}_v=0,\text{故}f\text{ 只是 }u\text{ 的函数,即 }z=f(u)=f\biggl(\frac xy\biggr).$
+
+(3) 解法1:
+
+$\text{方程 }F\Big(\frac1x-\frac1y-\frac1z\Big)=\frac1z,\text{两边分别对 }x,y\text{ 求导,得}$
+
+$\begin{cases}F'\cdot\left(-\frac{1}{x^2}+\frac{1}{z^2}\frac{\partial z}{\partial x}\right)=-\frac{1}{z^2}\frac{\partial z}{\partial x}(1),\\F'\cdot\left(\frac{1}{y^2}+\frac{1}{z^2}\frac{\partial z}{\partial y}\right)=-\frac{1}{z^2}\frac{\partial z}{\partial y}(2),\end{cases}$
+
+$\text{解(1)，(2)式得}\frac{\partial z}{\partial x}=\frac{z^2F^{\prime}}{\left(F^{\prime}+1\right)x^2},\frac{\partial z}{\partial y}=-\frac{z^2F^{\prime}}{\left(F^{\prime}+1\right)y^2}$​
+
+$\text{故 }x^2\frac{\partial z}{\partial x}+y^2\frac{\partial z}{\partial y}=0.$
+
+解法2: 用公式求。
+
+$\text{令 }G=F\Big(\frac{1}{x}-\frac{1}{y}-\frac{1}{z}\Big)-\frac{1}{z},\text{则}$
+
+$G'_x=F'\cdot\left(-\frac{1}{x^2}\right),G'_y=F'\cdot\frac{1}{y^2},G'_z=F'\cdot\frac{1}{z^2}+\frac{1}{z^2}$
+
+$\text{故}\frac{\partial z}{\partial x}=-\frac{G_{x}^{\prime}}{G_{z}^{'}}=\frac{z^{2}F^{\prime}}{x^{2}\left(F^{'}+1\right)},\frac{\partial z}{\partial y}=-\frac{G_{y}^{'}}{G_{z}^{'}}=-\frac{z^{2}F^{\prime}}{y^{2}\left(F^{'}+1\right)},$
+
+$\text{从而 }x^2\frac{\partial z}{\partial x}+y^2\frac{\partial z}{\partial y}=0.$
+
+(4) 解：
+
+$\text{将 }z=z(x,y)\text{ 代人 }y=g(x,z),\text{得 }y=g[x,z(x,y)] (1).$
+
+$\text{在方程 (1) 两边分别对 }x\text{ 求导,得}\frac{\mathrm{d}y}{\mathrm{d}x}=g_1^{\prime}\cdot1+g_2^{\prime}\cdot\left(\frac{\partial z}{\partial x}+\frac{\partial z}{\partial y}\cdot\frac{\mathrm{d}y}{\mathrm{d}x}\right)(2).$
+
+$\text{在方程 }f(x-z,xy)=0\text{ 两边分别对 }x,y\text{ 求偏导},\text{视 }z\text{ 是关于 }x,y\text{ 的函数,得}$
+
+$\begin{cases}f'_1\cdot\left(1-\frac{\partial z}{\partial x}\right)+f'_2\cdot y=0,\\f'_1\cdot\left(0-\frac{\partial z}{\partial y}\right)+f'_2\cdot x=0,\end{cases}$
+
+$\text{解得}\frac{\partial z}{\partial x}=\frac{f_1^{\prime}+f_2^{\prime}\cdot y}{f_1^{\prime}},\frac{\partial z}{\partial y}=\frac{f_2^{\prime}\cdot x}{f_1^{\prime}},\text{将其代入}\text{(2)}\text{式,解得}\frac{\mathrm{d}y}{\mathrm{d}x}=\frac{f_1^{\prime}g_1^{\prime}+g_2^{\prime}(f_1^{\prime}+f_2^{\prime}\cdot y)}{f_1^{\prime}-xf_2^{\prime}g_2^{\prime}}.$
+
+(5) 解：利用拉格朗日乘数法，令，
+
+$L(x,y,\lambda)=(1+y)^{2}+(1+x)^{2}+\lambda(x^{2}+y^{2}+xy-3)$
+
+$\text{则}$
+
+$\left.\left\{\begin{matrix}L'_x=2(1+x)+\lambda(2x+y)=0(1),\\L'_y=2(1+y)+\lambda(2y+x)=0(2),\\L'_\lambda=x^2+y^2+xy-3=0(3).\end{matrix}\right.\right.$​
+
+$\text{由(1),(2)消去}\lambda,\text{得}(x-y)(x+y-1)=0,\text{故 }x=y\text{ 或 }x+y-1=0.$
+
+$\text{当 }x=y\text{时,代入(3)式,解得}x=y=\pm1;$
+
+$\text{当 }x+y=1\text{ 时,代入(3)式,解得}x=2,y=-1\text{ 或 }x=-1,y=2.$
+
+$\text{比较大小:}f(1,1)=8,f(-1,-1)=0,f(2,-1)=f(-1,2)=9,$
+
+$\text{故 }f(x,y)\text{ 的最大值为 9}.$
+
+$\text{【注】 若 }L(x,y,\lambda)\text{ 关于 }x,y\text{ 具有轮换性(即 }x,y\text{ 互换位置},L(x,y,\lambda)\text{ 不变),一般地，方程组}$
+
+$\left.\left\{\begin{matrix}L_{x}^{\prime}=0,\\L_{y}^{\prime}=0,\\L_{\lambda}^{\prime}=0\end{matrix}\right.\right.$
+
+$\text{有解 }x=y.$
+
+$\text{但应注意,方程组的全部解不一定都满足 }x=y.\text{ 此题最大值不是在满足 }x=y\text{的点取得，应引起重视，否则容易漏解。}$
+
+(6) 解：
+
+$\text{设点 }P(x,y,z)\text{ 为椭球面在第一卦限上的任一点},\text{则过点 }P\text{ 的切平面方程为}$
+
+$\frac{2x}{a^2}(X-x)+\frac{2y}{b^2}(Y-y)+\frac{2z}{c^2}(Z-z)=0$
+
+$\text{该切平面在三个坐标轴上的截距分别为}\frac{a^2}x,\frac{b^2}y,\frac{c^2}z,\text{故四面体的体积}$
+
+$V=\frac{1}{3}\cdot\frac{1}{2}\cdot\frac{a^{2}}{x}\cdot\frac{b^{2}}{y}\cdot\frac{c^{2}}{z}=\frac{a^{2}b^{2}c^{2}}{6xyz}(x>0,y>0,z>0),$
+
+$\text{问题转化为求 }xyz\text{ 在条件}\frac{x^2}{a^2}+\frac{y^2}{b^2}+\frac{z^2}{c^2}=1\text{ 下的最大值}.$
+
+$\text{令}L=xyz+\lambda\Big(\frac{x^2}{a^2}+\frac{y^2}{b^2}+\frac{z^2}{c^2}-1\Big),\text{则}$
+
+$\begin{cases}L'_x=yz+2\lambda\dfrac{x}{a^2}=0(1),\\L'_y=xz+2\lambda\dfrac{y}{b^2}=0(2),\\L'_z=xy+2\lambda\dfrac{z}{c^2}=0(3),\\L'_\lambda=\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}+\dfrac{z^2}{c^2}-1=0(4).\end{cases}$​
+
+$\text{由 (1), (2), (3)式,得}\frac{x^2}{a^2}=\frac{y^2}{b^2}=\frac{z^2}{c^2},\text{代人(4)式,可解得}x=\frac{a}{\sqrt{3}},y=\frac{b}{\sqrt{3}},z=\frac{c}{\sqrt{3}},\text{故所求得最小体积为}$
+
+$V=\frac{a^2b^2c^2}{6\cdot\frac a{\sqrt{3}}\cdot\frac b{\sqrt{3}}\cdot\frac c{\sqrt{3}}}=\frac{\sqrt{3}}2abc$
+
+(7) 解：
+
+$\text{由极值的必要条件，得}$​
+
+$\begin{cases}\dfrac{\partial f}{\partial x}=3-2ax-2by&=0\\\dfrac{\partial f}{\partial y}=4-4ay-2bx&=0\end{cases}$
+
+$\text{即}\left.\left\{\begin{matrix}2ax+2by&=&3\\2bx+4ay&=&4\end{matrix}\right.\right.$​
+
+$\text{当}\left.\left|\begin{array}{cc}2a&2b\\2b&4a\end{array}\right.\right|=8a^2-4b^2\neq0\text{时，}f(x,y)\text{有唯一驻点，且}$
+
+$x=\frac{3a-2b}{2a^2-b^2}\text{,}y=\frac{4a-3b}{2(2a^2-b^2)}$
+
+$A=\frac{\partial^2f}{\partial x^2}=-2a,B=\frac{\partial^2f}{\partial x\partial y}=-2b,C=\frac{\partial^2f}{\partial y^2}=-4a.$
+
+$\text{当 }AC-B^2=8a^2-4b^2>0,\text{即 }2a^2-b^2>0\text{ 时},f(x,y)\text{ 有极值}.$
+
+$\text{当 }A=-2a>0,\text{即 }a<0\text{ 时},\text{有极小值};$
+
+$\text{当 }A=-2a<0,\text{即 }a>0\text{ 时,有极大值}.$
+
+$\text{综上所述,当 }2a^2-b^2>0\text{ 且 }a<0\text{ 时},f(x,y)\text{ 有唯一的极小值:当 }2a^2-b^2>0\text{ 且 }a>0\text{时，有唯一的极大值。}$
+
+(8) 解：依题意，有
+
+$\begin{cases}f'_x(-1,y_0)=\mathrm{e}^{-x}\left(-ax-b+y^2+a\right)\bigg|_{(-1,y_0)}=\mathrm{e}\left(2a-b+y_0^2\right)=0(1),\\\\f'_y(-1,y_0)=-\left.2y\mathrm{e}^{-x}\right|_{(-1,y_0)}=0(2)\end{cases}$
+
+$(\text{此处由(2)式,知 }y_0=0,\text{故 }f(x,y)\text{ 在点}(-1,0)\text{ 处取得极大值),}$
+
+$\text{解(1)式,得 }b=2a.\text{ 又}$
+
+$\begin{aligned}A&=f_{xx}^{\prime\prime}(-1,0)=\mathrm{e}^{-x}(ax+b-y^2-2a)\Bigg|_{(-1,0)}=\mathrm{e}\left(-3a+b\right),\\B&=f_{xy}^{\prime\prime}(-1,0)=2y\mathrm{e}^{-x}\Bigg|_{(-1,0)}=0,\\C&=f_{yy}^{\prime\prime}(-1,0)=-2\mathrm{e}^{-x}\Bigg|_{(-1,0)}=-2\mathrm{e},\end{aligned}$
+
+$\text{由已知},AC-B^2=-2\mathrm{e}^2\left(-3a+b\right)>0,A<0,\text{故 }a>0,b=2a.$
+
+$\text{当 }a=0,b=0\text{ 时 },AC-B^2=0,\text{此时 }f(x,y)=-y^2\mathrm{e}^{-x}\leqslant f(-1,0)=0,$
+
+$\text{不满足极值的定义,故 }f(-1,0)\text{ 不是极大值}.$
+
+(9) 解：
+
+$\text{已知方程两边同时对}x,y\text{求偏导,得}$
+
+$\begin{cases}2x-6y-2y\frac{\partial z}{\partial x}-2z\frac{\partial z}{\partial x}=0(1),\\-6x+20y-2z-2y\frac{\partial z}{\partial y}-2z\frac{\partial z}{\partial y}=0(2).\end{cases}$​
+
+$\text{令}\frac{\partial z}{\partial x}=0,\frac{\partial z}{\partial y}=0,\text{得}$
+
+$\left.\left\{\begin{matrix}x-3y=0,\\-3x+10y-z=0,\end{matrix}\right.\right.$​
+
+$\text{解得 }x=3y,z=y,\text{代入原方程解得}$
+
+$x=9,y=3,z=3\text{ 或 }x=-9,y=-3,z=-3.$
+
+$\text{(1) (2)式两边同时对 }x,y\text{ 求偏导},\text{得}$
+
+$\begin{cases}2-2y\frac{\partial^2z}{\partial x^2}-2\left(\frac{\partial z}{\partial x}\right)^2-2z\frac{\partial^2z}{\partial x^2}=0,\\-6-2\frac{\partial z}{\partial x}-2y\frac{\partial^2z}{\partial x\partial y}-2\frac{\partial z}{\partial y}\cdot\frac{\partial z}{\partial x}-2z\frac{\partial^2z}{\partial x\partial y}=0,\\20-2\frac{\partial z}{\partial y}-2\frac{\partial z}{\partial y}-2y\frac{\partial^2z}{\partial y^2}-2\left(\frac{\partial z}{\partial y}\right)^2-2z\frac{\partial^2z}{\partial y^2}=0,\end{cases}$
+
+$\text{将}\frac{\partial z}{\partial x}=0,\frac{\partial z}{\partial y}=0,x=9,y=3,z=3\text{ 代人上方程组},\text{得}$
+
+$A=\left.\frac{\partial^2z}{\partial x^2}\right|_{(9,3,3)}=\left.\frac16,B=\frac{\partial^2z}{\partial x\partial y}\right|_{(9,3,3)}=-\left.\frac12,C=\frac{\partial^2z}{\partial y^2}\right|_{(9,3,3)}=\frac53,$
+
+$\text{故 }AC-B^2=\frac1{36}>0,A=\frac16>0,\text{所以 }z(9,3)=3\text{ 为极小值}.$
+
+$\text{同理，得}$​
+
+$A=\left.\frac{\partial^2z}{\partial x^2}\right|_{(-9,-3,-3)}=-\left.\frac16,B=\left.\frac{\partial^2z}{\partial x\partial y}\right|_{(-9,-3,-3)}=\left.\frac12,C=\frac{\partial^2z}{\partial y^2}\right|_{(-9,-3,-3)}=-\frac53,\right. $
+
+$\text{故}AC-B^2=\frac{1}{36}>0\text{,}A=-\frac{1}{6}<0,\text{所以}z(-9,-3)=-3\text{为极大值}.$
