@@ -108,7 +108,9 @@ $\text{(7)设椭圆}\begin{cases}z=x^2+y^2,\\x+y+z=4,\end{cases}\text{上的点}
 
 
 
-$(9)\text{ 设 }f(u)\text{ 有二阶连续导数,且 }z=f(\mathrm{e}^{x}\sin{y})\text{ 满足}\frac{\partial^{2}z}{\partial x^{2}}+\frac{\partial^{2}z}{\partial y^{2}}=z\mathrm{e}^{2x},\text{求 }f(u).$
+$(9)\text{ 设 }f(u)\text{ 有二阶连续导数,且 }z=f(\mathrm{e}^{x}\sin{y})\text{ 满足}\frac{\partial^{2}z}{\partial x^{2}}+\frac{\partial^{2}z}{\partial y^{2}}=z\mathrm{e}^{2x},\text{求 }f(u).$​
+
+综合题
 
 一，选择题
 
@@ -154,23 +156,123 @@ $\text{D. 连续但偏导数不存在}$
 
 $\text{(5)设 }f(x,y)\text{ 在点}(0,0)\text{ 的某邻域内有定义},f(0,0)=0,\text{且}$
 
+$\lim_{\substack{x\to0\\y\to0}}\frac{f(x,y)-\sqrt{x^2+y^2}}{\sqrt{x^2+y^2}}=k(k\text{ 为常数})$
 
+$则当  k>-1\text{时,()}$
 
 (6)设$f(x,y)$可微，对任意的$x,y$,有$\frac{\partial f(x,y)}{\partial x}>0,\frac{\partial f(x,y)}{\partial y}<0$,则使得$f(x_1,y_1)<f(x_2,y_2)$ 成立的一个充分条件是( )
 
+$A.x_1<x_2,y_1>y_2$
 
+$\text{B.}x_1>x_2,y_1>y_2$
+
+$\mathrm{C.~}x_1<x_2,y_1<y_2$
+
+$\mathrm{D.~}x_1>x_2,y_1<y_2$
 
 (7)设 $F(x,y)$ 在点$(x_0,y_0)$的某邻域内有二阶连续偏导数，且 $F(x_0,y_0)=0$, $F_{x}^{\prime}(x_{0},y_{0})=0,F_{y}^{\prime}(x_{0},y_{0})>0,F_{xx}^{\prime\prime}(x_{0},y_{0})<0$,则由方程 $F(x,y)=0$ 确定的隐函数$y=y(x)$ 在$x=x_0$ 处( ).
 
+$\text{A. 取得极小值}$
 
+$\text{B. 取得极大值}$
 
+$\text{C. 不取得极值}$
 
+$\text{D. 不能确定是否取得极值}$
 
+二、填空题
 
+$\text{ (1)设 }z=z(x,y)\text{ 满足}\frac{\partial^2z}{\partial y^2}=2,\text{且 }z(x,0)=1,z_y^{\prime}(x,0)=x,\text{则}z(x,y)=$
+
+$\text{(2)设 }z=z(x,y)\text{ 有二阶连续偏导数 },\text{满足}\frac{\partial^2z}{\partial v\partial x}=x+y,\text{且}z(x,0)=x,z(0,y)=y^2,\text{则}z(x,y)=$
+
+$(3)\text{设}z=\frac{2x}{x^2-y^2},\text{则}\frac{\partial^nz}{\partial y^n}\Bigg|_{(2,1)}=$
+
+$(4)\text{ 设曲面 }x^2+2y^2+3z^2=21\text{ 的切平面平行于平面 }x+4y+6z=0,\text{则该切平面方程为()}$
+
+$\text{(5)设可微函数}f(x,y)\text{对任意}x,y,t,\text{满足}f(tx,ty)=t^2f(x,y),P_0(1,-2,2)\text{ 是曲面}$
+
+$z=f(x,y)\text{ 上一点,且 }f'_x(1,-2)=4,\text{则曲面在}P_0\text{点处的切平面方程为}$
+
+$\text{(6)设 }u(x,y,z)=\left.1+\frac{x^2}{6}+\frac{y^2}{12}+\frac{z^2}{18},n=\frac{1}{\sqrt{3}}(1,1,1),\text{则}\frac{\partial u}{\partial n}\right|_{(1,2,3)}=$
+
+$\text{(7)设 }u(x,y,z)=xy^2z^3\text{ 在点 }P(1,2,-1)\text{处沿曲面 }x^2+y^2=5\text{ 的外法线方向的方向导数为()}$
+
+三、解答题
+
+$\text{(1)已知 }x+y-z=\mathrm{e}^z,x\mathrm{e}^z=\tan t,y=\cos t,\text{求}\frac{\mathrm{d}^2z}{\mathrm{d}t^2}\bigg|_{t=0}.$
+
+$\text{(2)设}f\text{有一阶连续导数，证明:}z=f\left(\frac xy\right)\text{的充要条件是}x\frac{\partial z}{\partial x}+y\frac{\partial z}{\partial y}=0.$
+
+$\text{(3)设 }z=z(x,y)\text{ 是由方程 }F\Big(\frac{1}{x}-\frac{1}{y}-\frac{1}{z}\Big)=\frac{1}{z}\text{确定的隐函数},\text{其中 }F\text{ 可微,求}x^2~\frac{\partial z}{\partial x}+y^2~\frac{\partial z}{\partial y}$​
+
+$\text{(4)设 y}=g(x,z)\text{与}z=z(x,y)\text{是由方程}f(x-z,xy)=0\text{确定的函数},\text{求}\frac{\mathrm{dy}}{\mathrm{d}x}.$​
+
+$\text{(5)求函数}f(x,y)=(1+y)^2+(1+x)^2\text{在条件}x^2+y^2+xy=3\text{ 下的最大值}.$
+
+$\text{(6)求椭球面}\frac{x^2}{a^2}+\frac{y^2}{b^2}+\frac{z^2}{c^2}=1(a,b,c>0)\text{在第一卦限上的切平面与三个坐标面围成的四面体的最小体积。}$
+
+$\text{(7)设函数 }f(x,y)=3x+4y-ax^2-2ay^2-2bxy,\text{问 }a,b\text{ 满足什么条件时 },f(x,y)\text{有唯一的极大值和唯一的极小值？}$
+
+$\text{(8)设 }f(x,y)=\mathrm{e}^{-x}(ax+b-y^2)\text{ 在点}(-1,y_0)\text{ 处取得极大值},\text{求 }a,b\text{ 满足的条件}.$
+
+$\text{(9)设函数 }z=z(x,y)\text{ 由方程 }x^2-6xy+10y^2-2yz-z^2+18=0\text{确定},\text{求 }z=z(x,y)\text{的极值}$
+
+$\text{(10)设 }f(x)\text{ 有二阶连续导数},\text{且 }f(x)>0,f^{\prime}(0)=0,\text{证明}:z=f(x)\text{ln }f(y)\text{ 在点}$
+
+$(0,0)\text{ 处取得极小值的充分条件是 }f^{\prime\prime}(0)>0\text{ 且 }f(0)>1.$
+
+$(11)\text{已知}z=f(x,y)\text{的全微分}\mathrm{d}z=(y-x^2)\mathrm{d}x+(x-1)\mathrm{d}y,\text{且}f(1,1)=-\frac{1}{3},\text{求}$
+
+$f(x,y)\text{ 在 }D{:}0\leqslant y\leqslant7-x,0\leqslant x\leqslant7\text{ 上的最大值}.$
+
+$\text{(12)求曲线 }x^2+xy+y^2=1\text{ 上的点到坐标原点的最长距离与最短距离}.$
+
+$(13)\text{ 设中心在原点的椭圆为 }x^2-4xy+5y^2=1,\text{求该椭圆的长半轴与短半轴}.$
+
+$\text{(14)设 }x=x(y),z=z(y)\text{ 由方程组}$
+
+$\begin{cases}F(y-x,y-z)=0\\G\Big(xy,\frac{z}{y}\Big)=0\end{cases}$
+
+$\text{确定,求}\frac{\mathrm{d}x}{\mathrm{d}y},\frac{\mathrm{d}z}{\mathrm{d}y}.$
+
+$(15)\text{已知曲面 }\mathrm{e}^{2x-z}=f(\pi y-\sqrt{2}z),f\text{可微}.\text{证明}:\text{该曲面上任一点的切平面都平行于一条定直线。}$
+
+$(16)\text{ 设 }\alpha,\beta\text{为正数},\text{且}\frac{1}{\alpha}+\frac{1}{\beta}=1,\text{求 }f(x,y)=\frac{1}{\alpha}x^{\alpha}+\frac{1}{\beta}y^{\beta}\text{ 在条件 }xy=1(x>0,y>0)\text{下的最小值。}$
+
+$\text{(17)求函数 }u=\frac{x^2}{a^2}+\frac{y^2}{b^2}+\frac{z^2}{c^2}\text{ 在点 }P(x,y,z\text{)处沿 }l=xi+yj+zk\text{ 的方向导数,并讨论在哪些点该方向导数等于梯度的模。}$
+
+拓展题
+
+一、选择题
+
+$\text{下列}(\text{ )选项条件成立时 },\text{能够推出函数 }f(x,y)\text{ 在点}(x_0,y_0)\text{ 处可微},\text{且全微分}\mathrm{d}f(x,y)\Bigg|_{(x_0,y_0)}=0$
+
+$\operatorname{A.}f_x^{\prime}(x_0,y_0)=f_y^{\prime}(x_0,y_0)=0$
+
+$\text{B.}f(x,y)\text{ 在点}(x_0,y_0)\text{处的全增量 }\Delta f=\frac{\Delta x\Delta y}{\sqrt{(\Delta x)^2+(\Delta y)^2}}$
+
+$\text{C.}f(x,y)\text{在点}(x_0,y_0)\text{处的全增量}\Delta f=\frac{\sin[(\Delta x)^2+(\Delta y)^2]}{\sqrt{(\Delta x)^2+(\Delta y)^2}}$
+
+$\text{D.}f(x,y)\text{在点}(x_0,y_0)\text{处的全增量}\Delta f=\left[(\Delta x)^2+(\Delta y)^2\right]sin \frac{1}{(\Delta x)^2+(\Delta y)^2}$ 
+
+二、解答题
+
+$\text{设 }f(x,y)\text{ 在点}(0,0)\text{ 的某邻域内有定义},f(0,0)=0,\text{且}$
+
+$\lim_{\substack{x\to0\\y\to0}}\frac{f(x,y)}{\sqrt{x^2+y^2}}=1+k(k\text{ 为常数})$
+
+$\text{证明:(I)}f(x,y)\text{在点(0,0)处连续};$
+
+$\text{(II)当 }k\neq-1\text{ 时,}f(x,y)\text{ 在点}(0,0)\text{ 处不可微}$$\text{(II)当 }k\neq-1\text{ 时,}f(x,y)\text{ 在点}(0,0)\text{ 处不可微}$
+
+$(\text{III)当}k=-1\text{时},f(x,y)\text{在点(0,0)处可微}.$
 
 
 
 解答
+
+基础题
 
 一，选择题
 
@@ -263,7 +365,7 @@ $\frac{\partial z}{\partial x}=\frac{aF'_1}{bF'_1+cF'_2},\frac{\partial z}{\part
 
 $\text{设 }\boldsymbol{l}=(b,c,a),\text{由于}$
 
-$\boldsymbol{l}\bullet\boldsymbol{n}=\frac{ab{F}_{1}^{\prime}}{b{F}_{1}^{\prime}+c{F}_{2}^{\prime}}+\frac{ca{F}_{2}^{\prime}}{b{F}_{1}^{\prime}+c{F}_{2}^{\prime}}+(-a)=\frac{ab{F}_{1}^{\prime}+ca{F}_{2}^{\prime}-a\left(b{F}_{1}^{\prime}+c{F}_{2}^{\prime}\right)}{b{F}_{1}^{\prime}+c{F}_{2}^{\prime}}=0$
+$\boldsymbol{l}\cdot\boldsymbol{n}=\frac{ab{F}_{1}^{\prime}}{b{F}_{1}^{\prime}+c{F}_{2}^{\prime}}+\frac{ca{F}_{2}^{\prime}}{b{F}_{1}^{\prime}+c{F}_{2}^{\prime}}+(-a)=\frac{ab{F}_{1}^{\prime}+ca{F}_{2}^{\prime}-a\left(b{F}_{1}^{\prime}+c{F}_{2}^{\prime}\right)}{b{F}_{1}^{\prime}+c{F}_{2}^{\prime}}=0$
 
 $\text{故B正确。}$
 
@@ -339,7 +441,7 @@ $\text{故}\frac{\partial z}{\partial x}\Bigg|_{(e,0)}=\frac{1}{2\mathrm{e}},\le
 
 $\text{由已知条件,视为方程组确定 }y=y(x),t=t(x),\text{方程两边同时对 }x\text{ 求导},\text{得}$
 
-$\frac{\mathrm{d}y}{\mathrm{d}x}=f'_x+f'\frac{\mathrm{d}t}{\mathrm{d}x},F'_x+F'_y\bullet\frac{\mathrm{d}y}{\mathrm{d}x}+F'_t\frac{\mathrm{d}t}{\mathrm{d}x}=0$
+$\frac{\mathrm{d}y}{\mathrm{d}x}=f'_x+f'\frac{\mathrm{d}t}{\mathrm{d}x},F'_x+F'_y\cdot\frac{\mathrm{d}y}{\mathrm{d}x}+F'_t\frac{\mathrm{d}t}{\mathrm{d}x}=0$
 
 $\text{两式消去}\frac{\mathrm{d}t}{\mathrm{d}x},\text{得}$
 
@@ -381,7 +483,7 @@ $\frac{\operatorname{d}^2y}{\operatorname{d}x^2}=(f_{11}^{\prime\prime}\mathrm{e
 
 $\text{等式两边同时对 }x,y\text{ 求偏导,得}$
 
-$\begin{cases}\mathrm{e}^{2yx}\bullet2y\frac{\partial z}{\partial x}+1+\frac{\partial z}{\partial x}=0,\\\mathrm{e}^{2yz}\left(2z+2y\frac{\partial z}{\partial y}\right)+2y+\frac{\partial z}{\partial y}=0\end{cases}$
+$\begin{cases}\mathrm{e}^{2yx}\cdot2y\frac{\partial z}{\partial x}+1+\frac{\partial z}{\partial x}=0,\\\mathrm{e}^{2yz}\left(2z+2y\frac{\partial z}{\partial y}\right)+2y+\frac{\partial z}{\partial y}=0\end{cases}$
 
 $\text{当 }x=y=\frac{1}{2}\text{时},z=0,\text{代入方程组},\text{解得}$
 
@@ -1282,3 +1384,109 @@ $\text{所以若取 }l=\pi,n=2\pi,m=2\sqrt{2},\text{则有 T}\cdot n=0,\text{故
 $(\pi,2\sqrt{2},2\pi)\text{ 为方向向量的定直线}.$
 
 $\text{【注】 此题说明 }\mathrm{e}^{2x-x}=f(\pi y-\sqrt{2}z)\text{ 表示一个柱面}.$
+
+(16) 解：
+
+$\text{利用拉格朗日乘数法,令 }L=\frac1\alpha x^\alpha+\frac1\beta y^\beta+\lambda(xy-1),\text{则}$
+
+$\left.\left\{\begin{matrix}L'_x=x^{\alpha-1}+\lambda =0,\\L'_y=y^{\beta-1}+\lambda x=0,\\L'_\lambda=xy-1=0,\end{matrix}\right.\right.$
+
+$\text{解方程组得 }x=y=1.\text{ 由此得到点(1,1) 是唯一可能的极值点}.\text{再应用二元函数极值的充分条}$
+
+$\text{件判断},\text{可知点}(1,1)\text{ 是唯一极小值点},\text{故点}(1,1)\text{ 即为最小值点},\text{最小值为 }f_{\min}=f(1,1)=1.$
+
+(17) 解：
+
+$\frac{\partial u}{\partial l}=\frac{\partial u}{\partial x}{\cos\alpha}+\frac{\partial u}{\partial y}{\cos\beta}+\frac{\partial u}{\partial z}{\cos\gamma}$
+
+$\text{又}\frac{\partial u}{\partial x}=\frac{2x}{a^2},\frac{\partial u}{\partial y}=\frac{2y}{b^2},\frac{\partial u}{\partial z}=\frac{2z}{c^2},$
+
+$\cos\alpha=\frac xr,\cos\beta=\frac yr,\cos\gamma=\frac zr,$
+
+$\text{其中 }r=\sqrt{x^2+y^2+z^2},\text{故}$
+
+$\frac{\partial u}{\partial l}=\frac{2x}{a^2}\cdot\frac xr+\frac{2y}{b^2}\cdot\frac yr+\frac{2z}{c^2}\cdot\frac zr=\frac{2u}r,$
+
+$\text{且梯度为}\mathrm{~grad~}u=\left(\frac{\partial u}{\partial x},\frac{\partial u}{\partial y},\frac{\partial u}{\partial z}\right)=\left(\frac{2x}{a^2},\frac{2y}{b^2},\frac{2z}{c^2}\right).$
+
+$\text{(I)当}a,b,c\text{时，函数}u\text{圆}\frac{x^2}{a^2}+\frac{y^2}{b^2}+\frac{z^2}{c^2}=k(k>0)\text{梯度方向}$​
+$\text{向是等值面的外法线方向},\text{在椭球面的六个顶点处的外法线方向与向径 }l\text{ 的方向相同}.\text{故在}$​
+
+$\text{这些点处有}\frac{\partial u}{\partial l}=\mid\mathbf{grad } u\mid.$
+
+$\text{(II)当}a=b\neq c \text{时,等值面为旋转椭球面}\frac{x^2+y^2}{a^2}+\frac{z^2}{c^2}=k(k>0),\text{在顶点}(0,0,\pm c \sqrt{k})及圆周$
+
+$\left.\left\{\begin{matrix}x^2+y^2=a^2k,\\z=0\end{matrix}\right.\right.$
+
+$\text{上,梯度方向与向径}l\text{方向相同},\text{故在这些点处有}\frac{\partial u}{\partial l}=|\textbf{ grad }u|$​
+
+$\text{(III)当 }a=b=\text{c 时,等值面为球面 }x^2+y^2+z^2=a^2k(k>0),\text{球面上各点的外法线方向与向径}l\text{ 方向相同},\text{故在这些点处有}\frac{\partial u}{\partial l}=\mid\mathbf{ grad }u\mid.$
+
+拓展题
+
+一、选择题
+
+D
+
+解：
+
+$\text{对于}D:\text{当}D\text{中条件成立时,有}$
+
+$f'_x(x_0,y_0)=\lim\limits_{\Delta x\to0}\frac{\Delta f}{\Delta x}=\lim\limits_{\Delta x\to0}\Big[\frac{1}{\Delta x}\cdot(\Delta x)^2\sin\frac{1}{\left(\Delta x\right)^2}\Big]=0,$
+
+$f'_y(x_0,y_0)=\lim_{\Delta y\to0}\frac{\Delta f}{\Delta y}=\lim_{\Delta y\to0}\biggl[\frac{1}{\Delta y}\cdot(\Delta y)^2\sin\frac{1}{(\Delta y)^2}\biggr]=0,$
+
+$\lim_{\begin{smallmatrix}\Delta x\to0\\\Delta y\to0\end{smallmatrix}}\frac{\Delta f-\mathrm{d}f}{\rho}=\lim_{\begin{smallmatrix}\Delta x\to0\\\Delta y\to0\end{smallmatrix}}\frac{\left[(\Delta x)^2+(\Delta y)^2\right]\sin\frac{1}{(\Delta x)^2+(\Delta y)^2}}{\sqrt{(\Delta x)^2+(\Delta y)^2}}$
+
+$=\operatorname*{lim}_{\Delta x\to0\atop\Delta y\to0}[(\Delta x)^2+(\Delta y)^2]^{\frac{1}{2}}\cdot\sin\frac{1}{(\Delta x)^2+(\Delta y)^2}=0.$
+
+$\text{由可微的定义,知 }f(x,y)\text{ 在点}(x_{\circ},y_{\circ})\text{ 处可微},\text{且 d}f=0,\text{D 正确}.$
+
+$\text{对于A:由}f_x^{\prime}(x_0,y_0)=f_y^{\prime}(x_0,y_0)=0,\text{知偏导数存在},\text{但不能推出}f(x,y)\text{ 在点 }(x_0,y_0)\text{处可微。}$
+
+$\text{对于B：}\Delta f=\frac{\Delta x\Delta y}{\sqrt{(\Delta x)^2+(\Delta y)^2}},\text{当}\Delta y=0\text{时},\Delta f=0;\text{当}\Delta x=0\text{时},\Delta f=0,\text{故}$
+
+$f'_x(x_0,y_0)=\lim\limits_{\Delta x\to0}\frac{\Delta f}{\Delta x}=0,f'_y(x_0,y_0)=\lim\limits_{\Delta y\to0}\frac{\Delta f}{\Delta y}=0,\text{由此可知}$
+
+$\lim_{\substack{\Delta x\to0\\\Delta y\to0}}\frac{\Delta f-\mathrm{d}f}{\rho}=\lim_{\substack{\Delta x\to0\\\Delta 
+y\to0}}\frac{\Delta x\Delta y}{\sqrt{(\Delta x)^2+(\Delta y)^2}}\cdot\frac{1}{\sqrt{(\Delta x)^2+(\Delta y)^2}}=\lim_{\substack{\Delta x\to0\\\Delta y\to0}}\frac{\Delta x\Delta y}{(\Delta x)^2+(\Delta y)^2}$
+
+$\text{不存在,即 }f(x,y)\text{ 在点(}x_0,y_0)\text{ 处不可微}.$
+
+$\text{对于C:由于}\Delta f=\frac{\sin[(\Delta x)^2+(\Delta y)^2]}{\sqrt{(\Delta x)^2+(\Delta y)^2}},\text{故}f_x^{\prime}(x_0,y_0)=\lim_{\Delta x\to0}\frac{\sin(\Delta x)^2}{\mid\Delta x\mid\cdot\Delta x}=\lim_{\Delta x\to0}\frac{\Delta x}{\mid\Delta x\mid},$
+
+$\text{又因为}\lim_{\Delta x\to0^+}\frac{\Delta x}{\mid\Delta x\mid}=1,\lim_{\Delta x\to0^-}\frac{\Delta x}{\mid\Delta x\mid}=-1,$
+
+$\text{所以 }f_x^{\prime}(x_0,y_0)\text{ 不存在.同理 }f_y^{\prime}(x_0,y_0)\text{ 不存在,故 }f(x,y)\text{ 在点}(x_0,y_0)\text{ 处不可微}.$
+
+二、解答题
+
+证：
+
+$\text{令 }\rho=\sqrt{x^2+y^2},\text{由已知条件及极限与无穷小的关系,有}$
+
+$\frac{f(x,y)}{\sqrt{x^2+y^2}}=(1+k)+\alpha(\alpha\text{ 为无穷小}),$
+
+$\text{即}f(x,y)=(1+k)\sqrt{x^{2}+y^{2}}+o(\rho)(1).$
+
+$\text{(I)(1)式两边同时取极限,有}$
+
+$\lim\limits_{\begin{smallmatrix}x\to0\\y\to0\end{smallmatrix}}f(x,y)=\lim\limits_{\begin{smallmatrix}x\to0\\y\to0\end{smallmatrix}}(1+k)\sqrt{x^2+y^2}+\underset{\begin{smallmatrix}x\to0\\y\to0\end{smallmatrix}}{\operatorname*{lim}}o(\rho)=0=f(0,0)$
+
+$\text{故 }f(x,y)\text{ 在点(0,0) 处连续}.$
+
+$\text{(II)当}k\neq-1\text{ 时,}$
+
+$f'_{x}\left(0,0\right)=\lim_{x\to0}\frac{f(x,0)-f(0,0)}{x}=\lim_{x\to0}\frac{\left(1+k\right)\sqrt{x^{2}}+o(x)}{x}=\lim_{x\to0}\left[\left.(1+k)\frac{\mid x\mid}{x}+\frac{o(x)}{x}\right]\right. $
+
+$\lim_{x\to0}(1+k)\frac{\mid x\mid}x\text{ 不存在,故 }f_x{^{\prime}}(0,0)\text{ 不存在,同理 }f_y{^{\prime}}(0,0)\text{ 不存在,因此 }f(x,y)\text{ 在点 }(0,0)\text{处不可微（偏导数存在是可微的必要条件。}$
+
+$\text{ (II)当 }k=-1\text{ 时 },f(x,y)=o(\rho),\text{故}$
+
+$f_x^{\prime}(0,0)=\lim_{x\to0}\frac{f(x,0)-f(0,0)}x=\lim_{x\to0}\frac{o(x)}x=0$
+
+$\text{同理},f'_y(0,0)=0,\text{故 d}f\Big|_{(0,0)}=0\cdot x+0\cdot y,\text{则}$
+
+$\lim\limits_{\substack{x\to0\\y\to0}}\frac{\Delta f-\mathrm{d}f}{\rho}=\lim\limits_{\substack{x\to0\\y\to0}}\frac{f(x,y)-f(0,0)-0}{\sqrt{x^2+y^2}}=\lim\limits_{\substack{x\to0\\y\to0}}\frac{f(x,y)}{\sqrt{x^2+y^2}}=0$
+
+$\text{故 }f(x,y)\text{ 在点(0,0) 处可微}.$
